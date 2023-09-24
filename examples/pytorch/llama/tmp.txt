@@ -1,0 +1,1069 @@
+[  0%] Built target nvtx_utils
+[  1%] Built target cuda_driver_wrapper
+[  1%] Built target cuda_utils
+[  2%] Built target layernorm_kernels
+[  2%] Built target transpose_int8_kernels
+[  2%] Built target activation_int8_kernels
+[  2%] Built target bert_preprocess_kernels
+[  3%] Built target activation_kernels
+[  3%] Built target ban_bad_words
+[  3%] Built target quantization_int8_kernels
+[  5%] Built target add_residual_kernels
+[  7%] Built target logger
+[  7%] Built target softmax_int8_kernels
+[  7%] Built target decoding_kernels
+[  7%] Built target stop_criteria
+[  7%] Built target matrix_vector_multiplication
+[  7%] Built target beam_search_topk_kernels
+[  7%] Built target cutlass_heuristic
+[  8%] Built target unfused_attention_kernels
+[  8%] Built target longformer_kernels
+[  9%] Built target logprob_kernels
+[  9%] Built target cutlass_preprocessors
+[  9%] Built target word_list
+[  9%] Built target layout_transformer_int8_kernels
+[  9%] Built target custom_ar_kernels
+[  9%] Built target calibrate_quantize_weight_kernels
+[  9%] Built target layernorm_int8_kernels
+[ 10%] Built target matrix_transpose_kernels
+[ 10%] Built target add_bias_transpose_kernels
+[ 10%] Built target online_softmax_beamsearch_kernels
+[ 10%] Building CUDA object src/fastertransformer/kernels/CMakeFiles/gpt_kernels.dir/gpt_kernels.cu.o
+[ 10%] Built target sampling_penalty_kernels
+[ 10%] Built target sampling_topk_kernels
+[ 13%] Built target normalize_kernels
+[ 13%] Built target image_shift_partition_kernels
+[ 13%] Built target image_merge_kernels
+[ 13%] Built target quantize_weight
+[ 13%] Built target sampling_topp_kernels
+[ 15%] Built target dequantize_kernels
+[ 15%] Built target decoder_masked_multihead_attention
+[ 15%] Built target cuda_fp8_utils
+[ 15%] Built target transform_mask_kernels
+[ 16%] Built target xlnet_attention_kernels
+[ 17%] Built target mpi_utils
+[ 17%] Built target reverse_roll_kernels
+[ 18%] Built target cnpy
+[ 19%] Built target unfused_attention_int8_kernels
+[ 20%] Built target cublasAlgoMap
+[ 21%] Built target disentangled_attention_kernels
+[ 23%] Built target xlnet_preprocess_kernels
+[ 23%] Built target encoder_igemm_func
+[ 23%] Built target gemm_func
+[ 23%] Built target vit_kernels
+[ 23%] Built target gtest
+[ 23%] Built target tensor
+[ 23%] Built target beam_search_penalty_kernels
+[ 23%] Built target gen_relative_pos_bias
+[ 24%] Built target nccl_utils
+[ 25%] Built target cublasMMWrapper
+[ 27%] Built target memory_utils
+[ 27%] Built target gpt_gemm_func
+[ 27%] Built target int8_gemm
+[ 29%] Built target gtest_main
+[ 29%] Built target encoder_gemm_func
+[ 30%] Built target t5_gemm_func
+[ 30%] Built target swin_gemm_func
+[ 30%] Built target xlnet_gemm_func
+[ 30%] Built target llama_example_utils
+[ 30%] Built target decoding_gemm_func
+[ 30%] Built target gmock
+[ 30%] Built target swin_igemm_func
+[ 30%] Built target fpA_intB_gemm
+[ 30%] Built target moe_gemm_kernels
+[ 30%] Built target TransformerTritonBackend
+[ 30%] Built target BaseBeamSearchLayer
+[ 30%] Built target cublasINT8MMWrapper
+[ 30%] Built target LongformerAttentionLayer
+[ 30%] Built target UnfusedAttentionLayer
+[ 30%] Built target custom_ar_comm
+[ 35%] Built target layernorm_test
+[ 36%] Built target gemm
+[ 36%] Built target LLaMADecoderLayerWeight
+[ 36%] Built target DecoderCrossAttentionLayer
+[ 36%] Built target ParallelGptDecoderLayerWeight
+[ 36%] Built target DebertaLayerWeight
+[ 36%] Built target DisentangledAttentionLayer
+[ 36%] Built target test_activation
+[ 36%] Built target BaseSamplingLayer
+[ 36%] Built target GptJDecoderLayerWeight
+[ 36%] Built target BertLayerWeight
+[ 36%] Built target gpt_gemm
+[ 37%] Built target bert_gemm
+[ 37%] Built target GptNeoXDecoderLayerWeight
+[ 37%] Built target t5_gemm
+[ 37%] Built target swin_gemm
+[ 37%] Built target decoding_gemm
+[ 37%] Built target wenet_gemm
+[ 37%] Built target XlnetAttentionLayer
+[ 37%] Built target xlnet_gemm
+[ 38%] Built target BeamSearchLayer
+[ 39%] Built target vit_gemm
+[ 40%] Built target gmock_main
+[ 40%] Built target DecoderSelfAttentionLayer
+[ 40%] Built target UnfusedAttentionLayerINT8
+[ 40%] Built target moe_kernels
+[ 40%] Built target OnlineBeamSearchLayer
+[ 40%] Built target TensorParallelUnfusedAttentionLayer
+[ 40%] Built target test_gemm
+[ 40%] Built target TopKSamplingLayer
+[ 40%] Built target BertLayerINT8Weight
+[ 41%] Built target GptJWeight
+[ 43%] Built target BertWeight
+[ 43%] Built target TensorParallelDisentangledAttentionLayer
+[ 43%] Built target LLaMAWeight
+[ 44%] Built target GptNeoXWeight
+[ 44%] Built target ParallelGptWeight
+[ 44%] Built target TopPSamplingLayer
+[ 44%] Built target TensorParallelDecoderCrossAttentionLayer
+[ 44%] Built target DebertaWeight
+[ 44%] Built target FfnLayer
+[ 44%] Built target FfnLayerINT8
+[ 44%] Built target TensorParallelDecoderSelfAttentionLayer
+[ 49%] Built target LongformerEncoder
+[ 50%] Built target Decoder
+[ 50%] Built target Xlnet
+[ 51%] Built target TensorParallelReluFfnLayer
+[ 52%] Built target TensorParallelGeluFfnLayer
+[ 53%] Built target TensorParallelSiluFfnLayer
+[ 55%] Built target WenetDecoder
+[ 56%] Built target WenetEncoder
+[ 58%] Built target xlnet_correctness_example
+[ 59%] Built target xlnet_example
+[ 60%] Built target GptJDecoder
+[ 60%] Built target GptNeoXDecoder
+[ 63%] Built target BartDecoder
+[ 64%] Built target wenet_decoder_example
+[ 64%] Built target LinearAdapterLayer
+[ 64%] Built target ParallelGptDecoder
+[ 64%] Built target wenet_encoder_example
+[ 69%] Built target T5Common
+[ 75%] Built target T5Decoder
+[ 75%] Built target trt_fused_multi_head_attention
+[ 75%] Built target LLaMAContextAttentionLayer
+[ 75%] Built target WindowAttention
+[ 76%] Built target GptContextAttentionLayer
+[ 77%] Built target FusedAttentionLayerINT8
+[ 77%] Built target WindowAttentionINT8
+[ 77%] Built target FusedAttentionLayer
+[ 77%] Built target SwinBlock
+[ 77%] Built target TensorParallelGptContextAttentionLayer
+[ 77%] Built target SwinBlockINT8
+[ 77%] Built target ViTINT8
+[ 77%] Built target BertLayerINT8
+[ 77%] Built target Bert
+[ 78%] Built target ViT
+[ 79%] Built target T5Encoder
+[ 79%] Built target BartEncoder
+[ 79%] Built target SwinBasicLayer
+[ 80%] Built target vit_int8_example
+[ 81%] Built target SwinBasicLayerINT8
+[ 81%] Built target BertTritonBackend
+[ 81%] Built target bert_example
+[ 81%] Built target BertINT8
+[ 81%] Built target vit_example
+[ 81%] Built target T5EncoderTritonBackend
+[ 81%] Built target Swin
+[ 81%] Built target bert_triton_example
+[ 83%] Built target bert_int8_example
+[ 83%] Built target SwinINT8
+[ 84%] Built target swin_example
+[ 84%] Built target swin_int8_example
+[ 84%] Built target th_utils
+[ 85%] Built target th_swintransformer
+[ 85%] Built target moe_unit_ops
+[ 85%] Built target int8_gemm_test
+[ 85%] Built target th_vit
+[ 85%] Built target gemm_dq_unit_ops
+[ 85%] Built target th_encoder
+[ 86%] Built target th_gather_tree
+[ 86%] Built target th_longformer
+[ 86%] Built target th_decoder
+[ 87%] Built target th_bert
+[ 87%] Linking CUDA device code CMakeFiles/gpt_kernels.dir/cmake_device_link.o
+[ 87%] Linking CUDA static library ../../../lib/libgpt_kernels.a
+[ 87%] Built target gpt_kernels
+[ 88%] Linking CXX executable ../../bin/test_gpt_kernels
+[ 88%] Built target GptNeoXContextDecoder
+[ 89%] Built target GptJContextDecoder
+[ 88%] Built target ParallelGptContextDecoder
+[ 90%] Built target DynamicDecodeLayer
+[ 90%] Built target Deberta
+[ 90%] Built target LLaMAContextDecoder
+[ 91%] Built target Decoding
+[ 91%] Built target T5Decoding
+[ 92%] Built target ParallelGpt
+[ 92%] Built target GptJ
+[ 93%] Built target GptNeoX
+[ 93%] Linking CXX executable ../../bin/unittest
+[ 93%] Built target BartDecoding
+[ 93%] Built target LLaMA
+[ 93%] Linking CXX executable ../../../bin/decoding_example
+[ 93%] Built target T5TritonBackend
+[ 93%] Linking CXX executable ../../../bin/gpt_example
+[ 93%] Built target ParallelGptTritonBackend
+[ 93%] Linking CXX executable ../../bin/test_context_decoder_layer
+[ 93%] Linking CXX executable ../../../bin/llama_example
+[ 93%] Built target gpt_example_utils
+[ 93%] Built target th_deberta
+[ 93%] Built target GptJTritonBackend
+[ 93%] Built target GptNeoXTritonBackend
+[ 93%] Built target th_common
+[ 93%] Linking CXX executable ../../../bin/gptneox_example
+[ 93%] Linking CXX executable ../../../bin/multi_gpu_gpt_triton_example
+[ 93%] Linking CXX executable ../../../bin/multi_gpu_gpt_example
+[ 95%] Linking CXX executable ../../../bin/multi_gpu_gpt_interactive_example
+[ 95%] Linking CXX executable ../../../bin/gptj_triton_example
+[ 95%] Linking CXX executable ../../../bin/gptneox_triton_example
+[ 95%] Linking CXX executable ../../../bin/gptj_example
+[ 95%] Linking CXX executable ../../../bin/multi_gpu_gpt_async_example
+[ 95%] Linking CUDA device code CMakeFiles/transformer-shared.dir/cmake_device_link.o
+[ 96%] Built target test_gpt_kernels
+[ 96%] Built target th_gptneox
+[ 96%] Built target th_decoding
+[ 96%] Built target th_t5
+[ 97%] Built target th_bart
+[ 97%] Built target th_llama
+[ 98%] Built target th_parallel_gpt
+[ 99%] Linking CXX shared library ../../../lib/libth_transformer.so
+[ 99%] Linking CXX shared library lib/libtransformer-shared.so
+[100%] Built target unittest
+[100%] Built target test_context_decoder_layer
+[100%] Built target llama_example
+[100%] Built target decoding_example
+[100%] Built target gptneox_example
+[100%] Built target gptj_triton_example
+[100%] Built target multi_gpu_gpt_example
+[100%] Built target multi_gpu_gpt_interactive_example
+[100%] Built target gptneox_triton_example
+[100%] Built target gpt_example
+[100%] Built target multi_gpu_gpt_triton_example
+[100%] Built target gptj_example
+[100%] Built target multi_gpu_gpt_async_example
+[100%] Built target th_transformer
+[100%] Built target transformer-shared
+[3] load weights to device 3 : DONE!
+[0] load weights to device 0 : DONE!
+[1] load weights to device 1 : DONE!
+[2] load weights to device 2 : DONE!
+[WARNING] gemm_config.in is not found; using default GEMM algo
+[WARNING] gemm_config.in is not found; using default GEMM algo
+[WARNING] gemm_config.in is not found; using default GEMM algo
+[WARNING] gemm_config.in is not found; using default GEMM algo
+[FT][INFO] NCCL initialized rank=2 world_size=4 tensor_para=NcclParam[rank=0, world_size=1, nccl_comm=0x59470b10] pipeline_para=NcclParam[rank=2, world_size=4, nccl_comm=0x594745b0]
+[FT][INFO] NCCL initialized rank=0 world_size=4 tensor_para=NcclParam[rank=0, world_size=1, nccl_comm=0x5a4cc360] pipeline_para=NcclParam[rank=0, world_size=4, nccl_comm=0x5a4cfe00]
+[FT][INFO] NCCL initialized rank=1 world_size=4 tensor_para=NcclParam[rank=0, world_size=1, nccl_comm=0x5a3a21a0] pipeline_para=NcclParam[rank=1, world_size=4, nccl_comm=0x5a3a5c40]
+[FT][INFO] NCCL initialized rank=3 world_size=4 tensor_para=NcclParam[rank=0, world_size=1, nccl_comm=0x593b6e30] pipeline_para=NcclParam[rank=3, world_size=4, nccl_comm=0x593ba8d0]
+[2] Python LLaMA Init done
+[0] Python LLaMA Init done
+[1] Python LLaMA Init done
+[3] Python LLaMA Init done
+UNFUSED_MHA
+UNFUSED_MHA
+UNFUSED_MHA
+UNFUSED_MHA
+FLAG : /home/n2/junsik/lab/FasterTransformer/src/fastertransformer/models/llama/LLaMA.cc, 291, 2
+0x7f063a4be800,76,4,6656,0x5a037e00,0x7f063a4de400
+FLAG : /home/n2/junsik/lab/FasterTransformer/src/fastertransformer/models/llama/LLaMA.cc, 291, 1
+FLAG : /home/n2/junsik/lab/FasterTransformer/src/fastertransformer/models/llama/LLaMA.cc, 291, 3
+64416 here 4!
+64417 here 4!
+64418 here 4!
+64419 here 4!
+64420 here 4!
+64421 here 4!
+64422 here 4!
+64423 here 4!
+64424 here 4!
+64425 here 4!
+64426 here 4!
+64427 here 4!
+64428 here 4!
+64429 here 4!
+64430 here 4!
+64431 here 4!
+64432 here 4!
+64433 here 4!
+64434 here 4!
+64435 here 4!
+64436 here 4!
+64437 here 4!
+64438 here 4!
+64439 here 4!
+64440 here 4!
+64441 here 4!
+64442 here 4!
+64443 here 4!
+64444 here 4!
+64445 here 4!
+64446 here 4!
+64447 here 4!
+53056 here 4!
+53057 here 4!
+53058 here 4!
+53059 here 4!
+53060 here 4!
+53061 here 4!
+53062 here 4!
+53063 here 4!
+53064 here 4!
+53065 here 4!
+53066 here 4!
+53067 here 4!
+53068 here 4!
+53069 here 4!
+53070 here 4!
+53071 here 4!
+53072 here 4!
+53073 here 4!
+53074 here 4!
+53075 here 4!
+53076 here 4!
+53077 here 4!
+53078 here 4!
+53079 here 4!
+53080 here 4!
+53081 here 4!
+53082 here 4!
+53083 here 4!
+53084 here 4!
+53085 here 4!
+53086 here 4!
+53087 here 4!
+12992 here 4!
+12993 here 4!
+12994 here 4!
+12995 here 4!
+12996 here 4!
+12997 here 4!
+12998 here 4!
+12999 here 4!
+13000 here 4!
+13001 here 4!
+13002 here 4!
+13003 here 4!
+13004 here 4!
+13005 here 4!
+13006 here 4!
+13007 here 4!
+13008 here 4!
+13009 here 4!
+13010 here 4!
+13011 here 4!
+13012 here 4!
+13013 here 4!
+13014 here 4!
+13015 here 4!
+13016 here 4!
+13017 here 4!
+13018 here 4!
+13019 here 4!
+13020 here 4!
+13021 here 4!
+13022 here 4!
+13023 here 4!
+18752 here 4!
+18753 here 4!
+18754 here 4!
+18755 here 4!
+18756 here 4!
+18757 here 4!
+18758 here 4!
+18759 here 4!
+18760 here 4!
+18761 here 4!
+18762 here 4!
+18763 here 4!
+18764 here 4!
+18765 here 4!
+18766 here 4!
+18767 here 4!
+18768 here 4!
+18769 here 4!
+18770 here 4!
+18771 here 4!
+18772 here 4!
+18773 here 4!
+18774 here 4!
+18775 here 4!
+18776 here 4!
+18777 here 4!
+18778 here 4!
+18779 here 4!
+18780 here 4!
+18781 here 4!
+18782 here 4!
+18783 here 4!
+74208 here 4!
+74209 here 4!
+74210 here 4!
+74211 here 4!
+74212 here 4!
+74213 here 4!
+74214 here 4!
+74215 here 4!
+74216 here 4!
+74217 here 4!
+74218 here 4!
+74219 here 4!
+74220 here 4!
+74221 here 4!
+74222 here 4!
+74223 here 4!
+74224 here 4!
+74225 here 4!
+74226 here 4!
+74227 here 4!
+74228 here 4!
+74229 here 4!
+74230 here 4!
+74231 here 4!
+74232 here 4!
+74233 here 4!
+74234 here 4!
+74235 here 4!
+74236 here 4!
+74237 here 4!
+74238 here 4!
+74239 here 4!
+67904 here 4!
+67905 here 4!
+67906 here 4!
+67907 here 4!
+67908 here 4!
+67909 here 4!
+67910 here 4!
+67911 here 4!
+67912 here 4!
+67913 here 4!
+67914 here 4!
+67915 here 4!
+67916 here 4!
+67917 here 4!
+67918 here 4!
+67919 here 4!
+67920 here 4!
+67921 here 4!
+67922 here 4!
+67923 here 4!
+67924 here 4!
+67925 here 4!
+67926 here 4!
+67927 here 4!
+67928 here 4!
+67929 here 4!
+67930 here 4!
+67931 here 4!
+67932 here 4!
+67933 here 4!
+67934 here 4!
+67935 here 4!
+74016 here 4!
+74017 here 4!
+74018 here 4!
+74019 here 4!
+74020 here 4!
+74021 here 4!
+74022 here 4!
+74023 here 4!
+74024 here 4!
+74025 here 4!
+74026 here 4!
+74027 here 4!
+74028 here 4!
+74029 here 4!
+74030 here 4!
+74031 here 4!
+74032 here 4!
+74033 here 4!
+74034 here 4!
+74035 here 4!
+74036 here 4!
+74037 here 4!
+74038 here 4!
+74039 here 4!
+74040 here 4!
+74041 here 4!
+74042 here 4!
+74043 here 4!
+74044 here 4!
+74045 here 4!
+74046 here 4!
+74047 here 4!
+24224 here 4!
+24225 here 4!
+24226 here 4!
+24227 here 4!
+24228 here 4!
+24229 here 4!
+24230 here 4!
+24231 here 4!
+24232 here 4!
+24233 here 4!
+24234 here 4!
+24235 here 4!
+24236 here 4!
+24237 here 4!
+24238 here 4!
+24239 here 4!
+24240 here 4!
+24241 here 4!
+24242 here 4!
+24243 here 4!
+24244 here 4!
+24245 here 4!
+24246 here 4!
+24247 here 4!
+24248 here 4!
+24249 here 4!
+24250 here 4!
+24251 here 4!
+24252 here 4!
+24253 here 4!
+24254 here 4!
+24255 here 4!
+8032 here 4!
+8033 here 4!
+8034 here 4!
+8035 here 4!
+8036 here 4!
+8037 here 4!
+8038 here 4!
+8039 here 4!
+8040 here 4!
+8041 here 4!
+8042 here 4!
+8043 here 4!
+8044 here 4!
+8045 here 4!
+8046 here 4!
+8047 here 4!
+8048 here 4!
+8049 here 4!
+8050 here 4!
+8051 here 4!
+8052 here 4!
+8053 here 4!
+8054 here 4!
+8055 here 4!
+8056 here 4!
+8057 here 4!
+8058 here 4!
+8059 here 4!
+8060 here 4!
+8061 here 4!
+8062 here 4!
+8063 here 4!
+960 here 4!
+961 here 4!
+962 here 4!
+963 here 4!
+964 here 4!
+965 here 4!
+966 here 4!
+967 here 4!
+968 here 4!
+969 here 4!
+970 here 4!
+971 here 4!
+972 here 4!
+973 here 4!
+974 here 4!
+975 here 4!
+976 here 4!
+977 here 4!
+978 here 4!
+979 here 4!
+980 here 4!
+981 here 4!
+982 here 4!
+983 here 4!
+984 here 4!
+985 here 4!
+986 here 4!
+987 here 4!
+988 here 4!
+989 here 4!
+990 here 4!
+991 here 4!
+76160 here 4!
+76161 here 4!
+76162 here 4!
+76163 here 4!
+76164 here 4!
+76165 here 4!
+76166 here 4!
+76167 here 4!
+76168 here 4!
+76169 here 4!
+76170 here 4!
+76171 here 4!
+76172 here 4!
+76173 here 4!
+76174 here 4!
+76175 here 4!
+76176 here 4!
+76177 here 4!
+76178 here 4!
+76179 here 4!
+76180 here 4!
+76181 here 4!
+76182 here 4!
+76183 here 4!
+76184 here 4!
+76185 here 4!
+76186 here 4!
+76187 here 4!
+76188 here 4!
+76189 here 4!
+76190 here 4!
+76191 here 4!
+75904 here 4!
+75905 here 4!
+75906 here 4!
+75907 here 4!
+75908 here 4!
+75909 here 4!
+75910 here 4!
+75911 here 4!
+75912 here 4!
+75913 here 4!
+75914 here 4!
+75915 here 4!
+75916 here 4!
+75917 here 4!
+75918 here 4!
+75919 here 4!
+75920 here 4!
+75921 here 4!
+75922 here 4!
+75923 here 4!
+75924 here 4!
+75925 here 4!
+75926 here 4!
+75927 here 4!
+75928 here 4!
+75929 here 4!
+75930 here 4!
+75931 here 4!
+75932 here 4!
+75933 here 4!
+75934 here 4!
+75935 here 4!
+76032 here 4!
+76033 here 4!
+76034 here 4!
+76035 here 4!
+76036 here 4!
+76037 here 4!
+76038 here 4!
+76039 here 4!
+76040 here 4!
+76041 here 4!
+76042 here 4!
+76043 here 4!
+76044 here 4!
+76045 here 4!
+76046 here 4!
+76047 here 4!
+76048 here 4!
+76049 here 4!
+76050 here 4!
+76051 here 4!
+76052 here 4!
+76053 here 4!
+76054 here 4!
+76055 here 4!
+76056 here 4!
+76057 here 4!
+76058 here 4!
+76059 here 4!
+76060 here 4!
+76061 here 4!
+76062 here 4!
+76063 here 4!
+27520 here 4!
+27521 here 4!
+27522 here 4!
+27523 here 4!
+27524 here 4!
+27525 here 4!
+27526 here 4!
+27527 here 4!
+27528 here 4!
+27529 here 4!
+27530 here 4!
+27531 here 4!
+27532 here 4!
+27533 here 4!
+27534 here 4!
+27535 here 4!
+27536 here 4!
+27537 here 4!
+27538 here 4!
+27539 here 4!
+27540 here 4!
+27541 here 4!
+27542 here 4!
+27543 here 4!
+27544 here 4!
+27545 here 4!
+27546 here 4!
+27547 here 4!
+27548 here 4!
+27549 here 4!
+27550 here 4!
+27551 here 4!
+7520 here 4!
+7521 here 4!
+7522 here 4!
+7523 here 4!
+7524 here 4!
+7525 here 4!
+7526 here 4!
+7527 here 4!
+7528 here 4!
+7529 here 4!
+7530 here 4!
+7531 here 4!
+7532 here 4!
+7533 here 4!
+7534 here 4!
+7535 here 4!
+7536 here 4!
+7537 here 4!
+7538 here 4!
+7539 here 4!
+7540 here 4!
+7541 here 4!
+7542 here 4!
+7543 here 4!
+7544 here 4!
+7545 here 4!
+7546 here 4!
+7547 here 4!
+7548 here 4!
+7549 here 4!
+7550 here 4!
+7551 here 4!
+55680 here 4!
+55681 here 4!
+55682 here 4!
+55683 here 4!
+55684 here 4!
+55685 here 4!
+55686 here 4!
+55687 here 4!
+55688 here 4!
+55689 here 4!
+55690 here 4!
+55691 here 4!
+55692 here 4!
+55693 here 4!
+55694 here 4!
+55695 here 4!
+55696 here 4!
+55697 here 4!
+55698 here 4!
+55699 here 4!
+55700 here 4!
+55701 here 4!
+55702 here 4!
+55703 here 4!
+55704 here 4!
+55705 here 4!
+55706 here 4!
+55707 here 4!
+55708 here 4!
+55709 here 4!
+55710 here 4!
+55711 here 4!
+55776 here 4!
+55777 here 4!
+55778 here 4!
+55779 here 4!
+55780 here 4!
+55781 here 4!
+55782 here 4!
+55783 here 4!
+55784 here 4!
+55785 here 4!
+55786 here 4!
+55787 here 4!
+55788 here 4!
+55789 here 4!
+55790 here 4!
+55791 here 4!
+55792 here 4!
+55793 here 4!
+55794 here 4!
+55795 here 4!
+55796 here 4!
+55797 here 4!
+55798 here 4!
+55799 here 4!
+55800 here 4!
+55801 here 4!
+55802 here 4!
+55803 here 4!
+55804 here 4!
+55805 here 4!
+55806 here 4!
+55807 here 4!
+7136 here 4!
+7137 here 4!
+7138 here 4!
+7139 here 4!
+7140 here 4!
+7141 here 4!
+7142 here 4!
+7143 here 4!
+7144 here 4!
+7145 here 4!
+7146 here 4!
+7147 here 4!
+7148 here 4!
+7149 here 4!
+7150 here 4!
+7151 here 4!
+7152 here 4!
+7153 here 4!
+7154 here 4!
+7155 here 4!
+7156 here 4!
+7157 here 4!
+7158 here 4!
+7159 here 4!
+7160 here 4!
+7161 here 4!
+7162 here 4!
+7163 here 4!
+7164 here 4!
+7165 here 4!
+7166 here 4!
+7167 here 4!
+67936 here 4!
+67937 here 4!
+67938 here 4!
+67939 here 4!
+67940 here 4!
+67941 here 4!
+67942 here 4!
+67943 here 4!
+67944 here 4!
+67945 here 4!
+67946 here 4!
+67947 here 4!
+67948 here 4!
+67949 here 4!
+67950 here 4!
+67951 here 4!
+67952 here 4!
+67953 here 4!
+67954 here 4!
+67955 here 4!
+67956 here 4!
+67957 here 4!
+67958 here 4!
+67959 here 4!
+67960 here 4!
+67961 here 4!
+67962 here 4!
+67963 here 4!
+67964 here 4!
+67965 here 4!
+67966 here 4!
+67967 here 4!
+55648 here 4!
+55649 here 4!
+55650 here 4!
+55651 here 4!
+55652 here 4!
+55653 here 4!
+55654 here 4!
+55655 here 4!
+55656 here 4!
+55657 here 4!
+55658 here 4!
+55659 here 4!
+55660 here 4!
+55661 here 4!
+55662 here 4!
+55663 here 4!
+55664 here 4!
+55665 here 4!
+55666 here 4!
+55667 here 4!
+55668 here 4!
+55669 here 4!
+55670 here 4!
+55671 here 4!
+55672 here 4!
+55673 here 4!
+55674 here 4!
+55675 here 4!
+55676 here 4!
+55677 here 4!
+55678 here 4!
+55679 here 4!
+4064 here 4!
+4065 here 4!
+4066 here 4!
+4067 here 4!
+4068 here 4!
+4069 here 4!
+4070 here 4!
+4071 here 4!
+4072 here 4!
+4073 here 4!
+4074 here 4!
+4075 here 4!
+4076 here 4!
+4077 here 4!
+4078 here 4!
+4079 here 4!
+4080 here 4!
+4081 here 4!
+4082 here 4!
+4083 here 4!
+4084 here 4!
+4085 here 4!
+4086 here 4!
+4087 here 4!
+4088 here 4!
+4089 here 4!
+4090 here 4!
+4091 here 4!
+4092 here 4!
+4093 here 4!
+4094 here 4!
+4095 here 4!
+47584 here 4!
+47585 here 4!
+47586 here 4!
+47587 here 4!
+47588 here 4!
+47589 here 4!
+47590 here 4!
+47591 here 4!
+47592 here 4!
+47593 here 4!
+47594 here 4!
+47595 here 4!
+47596 here 4!
+47597 here 4!
+47598 here 4!
+47599 here 4!
+47600 here 4!
+47601 here 4!
+47602 here 4!
+47603 here 4!
+47604 here 4!
+47605 here 4!
+47606 here 4!
+47607 here 4!
+47608 here 4!
+47609 here 4!
+47610 here 4!
+47611 here 4!
+47612 here 4!
+47613 here 4!
+47614 here 4!
+47615 here 4!
+28064 here 4!
+28065 here 4!
+28066 here 4!
+28067 here 4!
+28068 here 4!
+28069 here 4!
+28070 here 4!
+28071 here 4!
+28072 here 4!
+28073 here 4!
+28074 here 4!
+28075 here 4!
+28076 here 4!
+28077 here 4!
+28078 here 4!
+28079 here 4!
+28080 here 4!
+28081 here 4!
+28082 here 4!
+28083 here 4!
+28084 here 4!
+28085 here 4!
+28086 here 4!
+28087 here 4!
+28088 here 4!
+28089 here 4!
+28090 here 4!
+28091 here 4!
+28092 here 4!
+28093 here 4!
+28094 here 4!
+28095 here 4!
+56608 here 4!
+56609 here 4!
+56610 here 4!
+56611 here 4!
+56612 here 4!
+56613 here 4!
+56614 here 4!
+56615 here 4!
+56616 here 4!
+56617 here 4!
+56618 here 4!
+56619 here 4!
+56620 here 4!
+56621 here 4!
+56622 here 4!
+56623 here 4!
+56624 here 4!
+56625 here 4!
+56626 here 4!
+56627 here 4!
+56628 here 4!
+56629 here 4!
+56630 here 4!
+56631 here 4!
+56632 here 4!
+56633 here 4!
+56634 here 4!
+56635 here 4!
+56636 here 4!
+56637 here 4!
+56638 here 4!
+56639 here 4!
+55616 here 4!
+55617 here 4!
+55618 here 4!
+55619 here 4!
+55620 here 4!
+55621 here 4!
+55622 here 4!
+55623 here 4!
+55624 here 4!
+55625 here 4!
+55626 here 4!
+55627 here 4!
+55628 here 4!
+55629 here 4!
+55630 here 4!
+55631 here 4!
+55632 here 4!
+55633 here 4!
+55634 here 4!
+55635 here 4!
+55636 here 4!
+55637 here 4!
+55638 here 4!
+55639 here 4!
+55640 here 4!
+55641 here 4!
+55642 here 4!
+55643 here 4!
+55644 here 4!
+55645 here 4!
+55646 here 4!
+55647 here 4!
+[FT][ERROR] CUDA runtime error: an illegal memory access was encountered /home/n2/junsik/lab/FasterTransformer/src/fastertransformer/models/llama/LLaMA.cc:288 

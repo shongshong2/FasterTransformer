@@ -1,0 +1,23 @@
+class ModelArgs:
+    ckpt_path: str = './'
+    lib_path: str = './'
+    sample_input_file: str = './'
+    tokenizer_path: str = './'
+    head_num : int = 1
+    size_per_head : int = 1
+    vocab_size : int = 1
+    decoder_layers : int = 1
+    rotary_embedding : int = 1
+    multiple_of : int = 1
+    max_cache_seq_len : int = 1
+    padding_id : int = 1
+    weight_data_type : str = 'fp16'
+    inference_data_type : str = 'fp16'
+    pipeline_para_size : int = 1
+    beam_width : int = 1
+    request_batch_size : int = 1
+    hidden_units : int = 1
+    inter_size : int = 1
+    min_length : int = 1
+    max_seq_len : int = 1024
+    use_gptj_residual : bool = False
