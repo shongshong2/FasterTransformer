@@ -1,1069 +1,612 @@
-[  0%] Built target nvtx_utils
-[  1%] Built target cuda_driver_wrapper
-[  1%] Built target cuda_utils
-[  2%] Built target layernorm_kernels
-[  2%] Built target transpose_int8_kernels
-[  2%] Built target activation_int8_kernels
-[  2%] Built target bert_preprocess_kernels
-[  3%] Built target activation_kernels
-[  3%] Built target ban_bad_words
-[  3%] Built target quantization_int8_kernels
-[  5%] Built target add_residual_kernels
-[  7%] Built target logger
-[  7%] Built target softmax_int8_kernels
-[  7%] Built target decoding_kernels
-[  7%] Built target stop_criteria
-[  7%] Built target matrix_vector_multiplication
-[  7%] Built target beam_search_topk_kernels
-[  7%] Built target cutlass_heuristic
-[  8%] Built target unfused_attention_kernels
-[  8%] Built target longformer_kernels
-[  9%] Built target logprob_kernels
-[  9%] Built target cutlass_preprocessors
-[  9%] Built target word_list
-[  9%] Built target layout_transformer_int8_kernels
-[  9%] Built target custom_ar_kernels
-[  9%] Built target calibrate_quantize_weight_kernels
-[  9%] Built target layernorm_int8_kernels
-[ 10%] Built target matrix_transpose_kernels
-[ 10%] Built target add_bias_transpose_kernels
-[ 10%] Built target online_softmax_beamsearch_kernels
-[ 10%] Building CUDA object src/fastertransformer/kernels/CMakeFiles/gpt_kernels.dir/gpt_kernels.cu.o
-[ 10%] Built target sampling_penalty_kernels
-[ 10%] Built target sampling_topk_kernels
-[ 13%] Built target normalize_kernels
-[ 13%] Built target image_shift_partition_kernels
-[ 13%] Built target image_merge_kernels
-[ 13%] Built target quantize_weight
-[ 13%] Built target sampling_topp_kernels
-[ 15%] Built target dequantize_kernels
-[ 15%] Built target decoder_masked_multihead_attention
-[ 15%] Built target cuda_fp8_utils
-[ 15%] Built target transform_mask_kernels
-[ 16%] Built target xlnet_attention_kernels
-[ 17%] Built target mpi_utils
-[ 17%] Built target reverse_roll_kernels
-[ 18%] Built target cnpy
-[ 19%] Built target unfused_attention_int8_kernels
-[ 20%] Built target cublasAlgoMap
-[ 21%] Built target disentangled_attention_kernels
-[ 23%] Built target xlnet_preprocess_kernels
-[ 23%] Built target encoder_igemm_func
-[ 23%] Built target gemm_func
-[ 23%] Built target vit_kernels
-[ 23%] Built target gtest
-[ 23%] Built target tensor
-[ 23%] Built target beam_search_penalty_kernels
-[ 23%] Built target gen_relative_pos_bias
-[ 24%] Built target nccl_utils
-[ 25%] Built target cublasMMWrapper
-[ 27%] Built target memory_utils
-[ 27%] Built target gpt_gemm_func
-[ 27%] Built target int8_gemm
-[ 29%] Built target gtest_main
-[ 29%] Built target encoder_gemm_func
-[ 30%] Built target t5_gemm_func
-[ 30%] Built target swin_gemm_func
-[ 30%] Built target xlnet_gemm_func
-[ 30%] Built target llama_example_utils
-[ 30%] Built target decoding_gemm_func
-[ 30%] Built target gmock
-[ 30%] Built target swin_igemm_func
-[ 30%] Built target fpA_intB_gemm
-[ 30%] Built target moe_gemm_kernels
-[ 30%] Built target TransformerTritonBackend
-[ 30%] Built target BaseBeamSearchLayer
-[ 30%] Built target cublasINT8MMWrapper
-[ 30%] Built target LongformerAttentionLayer
-[ 30%] Built target UnfusedAttentionLayer
-[ 30%] Built target custom_ar_comm
-[ 35%] Built target layernorm_test
-[ 36%] Built target gemm
-[ 36%] Built target LLaMADecoderLayerWeight
-[ 36%] Built target DecoderCrossAttentionLayer
-[ 36%] Built target ParallelGptDecoderLayerWeight
-[ 36%] Built target DebertaLayerWeight
-[ 36%] Built target DisentangledAttentionLayer
-[ 36%] Built target test_activation
-[ 36%] Built target BaseSamplingLayer
-[ 36%] Built target GptJDecoderLayerWeight
-[ 36%] Built target BertLayerWeight
-[ 36%] Built target gpt_gemm
-[ 37%] Built target bert_gemm
-[ 37%] Built target GptNeoXDecoderLayerWeight
-[ 37%] Built target t5_gemm
-[ 37%] Built target swin_gemm
-[ 37%] Built target decoding_gemm
-[ 37%] Built target wenet_gemm
-[ 37%] Built target XlnetAttentionLayer
-[ 37%] Built target xlnet_gemm
-[ 38%] Built target BeamSearchLayer
-[ 39%] Built target vit_gemm
-[ 40%] Built target gmock_main
-[ 40%] Built target DecoderSelfAttentionLayer
-[ 40%] Built target UnfusedAttentionLayerINT8
-[ 40%] Built target moe_kernels
-[ 40%] Built target OnlineBeamSearchLayer
-[ 40%] Built target TensorParallelUnfusedAttentionLayer
-[ 40%] Built target test_gemm
-[ 40%] Built target TopKSamplingLayer
-[ 40%] Built target BertLayerINT8Weight
-[ 41%] Built target GptJWeight
-[ 43%] Built target BertWeight
-[ 43%] Built target TensorParallelDisentangledAttentionLayer
-[ 43%] Built target LLaMAWeight
-[ 44%] Built target GptNeoXWeight
-[ 44%] Built target ParallelGptWeight
-[ 44%] Built target TopPSamplingLayer
-[ 44%] Built target TensorParallelDecoderCrossAttentionLayer
-[ 44%] Built target DebertaWeight
-[ 44%] Built target FfnLayer
-[ 44%] Built target FfnLayerINT8
-[ 44%] Built target TensorParallelDecoderSelfAttentionLayer
-[ 49%] Built target LongformerEncoder
-[ 50%] Built target Decoder
-[ 50%] Built target Xlnet
-[ 51%] Built target TensorParallelReluFfnLayer
-[ 52%] Built target TensorParallelGeluFfnLayer
-[ 53%] Built target TensorParallelSiluFfnLayer
-[ 55%] Built target WenetDecoder
-[ 56%] Built target WenetEncoder
-[ 58%] Built target xlnet_correctness_example
-[ 59%] Built target xlnet_example
-[ 60%] Built target GptJDecoder
-[ 60%] Built target GptNeoXDecoder
-[ 63%] Built target BartDecoder
-[ 64%] Built target wenet_decoder_example
-[ 64%] Built target LinearAdapterLayer
-[ 64%] Built target ParallelGptDecoder
-[ 64%] Built target wenet_encoder_example
-[ 69%] Built target T5Common
-[ 75%] Built target T5Decoder
-[ 75%] Built target trt_fused_multi_head_attention
-[ 75%] Built target LLaMAContextAttentionLayer
-[ 75%] Built target WindowAttention
-[ 76%] Built target GptContextAttentionLayer
-[ 77%] Built target FusedAttentionLayerINT8
-[ 77%] Built target WindowAttentionINT8
-[ 77%] Built target FusedAttentionLayer
-[ 77%] Built target SwinBlock
-[ 77%] Built target TensorParallelGptContextAttentionLayer
-[ 77%] Built target SwinBlockINT8
-[ 77%] Built target ViTINT8
-[ 77%] Built target BertLayerINT8
-[ 77%] Built target Bert
-[ 78%] Built target ViT
-[ 79%] Built target T5Encoder
-[ 79%] Built target BartEncoder
-[ 79%] Built target SwinBasicLayer
-[ 80%] Built target vit_int8_example
-[ 81%] Built target SwinBasicLayerINT8
-[ 81%] Built target BertTritonBackend
-[ 81%] Built target bert_example
-[ 81%] Built target BertINT8
-[ 81%] Built target vit_example
-[ 81%] Built target T5EncoderTritonBackend
-[ 81%] Built target Swin
-[ 81%] Built target bert_triton_example
-[ 83%] Built target bert_int8_example
-[ 83%] Built target SwinINT8
-[ 84%] Built target swin_example
-[ 84%] Built target swin_int8_example
-[ 84%] Built target th_utils
-[ 85%] Built target th_swintransformer
-[ 85%] Built target moe_unit_ops
-[ 85%] Built target int8_gemm_test
-[ 85%] Built target th_vit
-[ 85%] Built target gemm_dq_unit_ops
-[ 85%] Built target th_encoder
-[ 86%] Built target th_gather_tree
-[ 86%] Built target th_longformer
-[ 86%] Built target th_decoder
-[ 87%] Built target th_bert
-[ 87%] Linking CUDA device code CMakeFiles/gpt_kernels.dir/cmake_device_link.o
-[ 87%] Linking CUDA static library ../../../lib/libgpt_kernels.a
-[ 87%] Built target gpt_kernels
-[ 88%] Linking CXX executable ../../bin/test_gpt_kernels
-[ 88%] Built target GptNeoXContextDecoder
-[ 89%] Built target GptJContextDecoder
-[ 88%] Built target ParallelGptContextDecoder
-[ 90%] Built target DynamicDecodeLayer
-[ 90%] Built target Deberta
-[ 90%] Built target LLaMAContextDecoder
-[ 91%] Built target Decoding
-[ 91%] Built target T5Decoding
-[ 92%] Built target ParallelGpt
-[ 92%] Built target GptJ
-[ 93%] Built target GptNeoX
-[ 93%] Linking CXX executable ../../bin/unittest
-[ 93%] Built target BartDecoding
-[ 93%] Built target LLaMA
-[ 93%] Linking CXX executable ../../../bin/decoding_example
-[ 93%] Built target T5TritonBackend
-[ 93%] Linking CXX executable ../../../bin/gpt_example
-[ 93%] Built target ParallelGptTritonBackend
-[ 93%] Linking CXX executable ../../bin/test_context_decoder_layer
-[ 93%] Linking CXX executable ../../../bin/llama_example
-[ 93%] Built target gpt_example_utils
-[ 93%] Built target th_deberta
-[ 93%] Built target GptJTritonBackend
-[ 93%] Built target GptNeoXTritonBackend
-[ 93%] Built target th_common
-[ 93%] Linking CXX executable ../../../bin/gptneox_example
-[ 93%] Linking CXX executable ../../../bin/multi_gpu_gpt_triton_example
-[ 93%] Linking CXX executable ../../../bin/multi_gpu_gpt_example
-[ 95%] Linking CXX executable ../../../bin/multi_gpu_gpt_interactive_example
-[ 95%] Linking CXX executable ../../../bin/gptj_triton_example
-[ 95%] Linking CXX executable ../../../bin/gptneox_triton_example
-[ 95%] Linking CXX executable ../../../bin/gptj_example
-[ 95%] Linking CXX executable ../../../bin/multi_gpu_gpt_async_example
-[ 95%] Linking CUDA device code CMakeFiles/transformer-shared.dir/cmake_device_link.o
-[ 96%] Built target test_gpt_kernels
-[ 96%] Built target th_gptneox
-[ 96%] Built target th_decoding
-[ 96%] Built target th_t5
-[ 97%] Built target th_bart
-[ 97%] Built target th_llama
-[ 98%] Built target th_parallel_gpt
-[ 99%] Linking CXX shared library ../../../lib/libth_transformer.so
-[ 99%] Linking CXX shared library lib/libtransformer-shared.so
-[100%] Built target unittest
-[100%] Built target test_context_decoder_layer
-[100%] Built target llama_example
-[100%] Built target decoding_example
-[100%] Built target gptneox_example
-[100%] Built target gptj_triton_example
-[100%] Built target multi_gpu_gpt_example
-[100%] Built target multi_gpu_gpt_interactive_example
-[100%] Built target gptneox_triton_example
-[100%] Built target gpt_example
-[100%] Built target multi_gpu_gpt_triton_example
-[100%] Built target gptj_example
-[100%] Built target multi_gpu_gpt_async_example
-[100%] Built target th_transformer
-[100%] Built target transformer-shared
-[3] load weights to device 3 : DONE!
-[0] load weights to device 0 : DONE!
-[1] load weights to device 1 : DONE!
-[2] load weights to device 2 : DONE!
-[WARNING] gemm_config.in is not found; using default GEMM algo
-[WARNING] gemm_config.in is not found; using default GEMM algo
-[WARNING] gemm_config.in is not found; using default GEMM algo
-[WARNING] gemm_config.in is not found; using default GEMM algo
-[FT][INFO] NCCL initialized rank=2 world_size=4 tensor_para=NcclParam[rank=0, world_size=1, nccl_comm=0x59470b10] pipeline_para=NcclParam[rank=2, world_size=4, nccl_comm=0x594745b0]
-[FT][INFO] NCCL initialized rank=0 world_size=4 tensor_para=NcclParam[rank=0, world_size=1, nccl_comm=0x5a4cc360] pipeline_para=NcclParam[rank=0, world_size=4, nccl_comm=0x5a4cfe00]
-[FT][INFO] NCCL initialized rank=1 world_size=4 tensor_para=NcclParam[rank=0, world_size=1, nccl_comm=0x5a3a21a0] pipeline_para=NcclParam[rank=1, world_size=4, nccl_comm=0x5a3a5c40]
-[FT][INFO] NCCL initialized rank=3 world_size=4 tensor_para=NcclParam[rank=0, world_size=1, nccl_comm=0x593b6e30] pipeline_para=NcclParam[rank=3, world_size=4, nccl_comm=0x593ba8d0]
-[2] Python LLaMA Init done
-[0] Python LLaMA Init done
-[1] Python LLaMA Init done
-[3] Python LLaMA Init done
-UNFUSED_MHA
-UNFUSED_MHA
-UNFUSED_MHA
-UNFUSED_MHA
-FLAG : /home/n2/junsik/lab/FasterTransformer/src/fastertransformer/models/llama/LLaMA.cc, 291, 2
-0x7f063a4be800,76,4,6656,0x5a037e00,0x7f063a4de400
-FLAG : /home/n2/junsik/lab/FasterTransformer/src/fastertransformer/models/llama/LLaMA.cc, 291, 1
-FLAG : /home/n2/junsik/lab/FasterTransformer/src/fastertransformer/models/llama/LLaMA.cc, 291, 3
-64416 here 4!
-64417 here 4!
-64418 here 4!
-64419 here 4!
-64420 here 4!
-64421 here 4!
-64422 here 4!
-64423 here 4!
-64424 here 4!
-64425 here 4!
-64426 here 4!
-64427 here 4!
-64428 here 4!
-64429 here 4!
-64430 here 4!
-64431 here 4!
-64432 here 4!
-64433 here 4!
-64434 here 4!
-64435 here 4!
-64436 here 4!
-64437 here 4!
-64438 here 4!
-64439 here 4!
-64440 here 4!
-64441 here 4!
-64442 here 4!
-64443 here 4!
-64444 here 4!
-64445 here 4!
-64446 here 4!
-64447 here 4!
-53056 here 4!
-53057 here 4!
-53058 here 4!
-53059 here 4!
-53060 here 4!
-53061 here 4!
-53062 here 4!
-53063 here 4!
-53064 here 4!
-53065 here 4!
-53066 here 4!
-53067 here 4!
-53068 here 4!
-53069 here 4!
-53070 here 4!
-53071 here 4!
-53072 here 4!
-53073 here 4!
-53074 here 4!
-53075 here 4!
-53076 here 4!
-53077 here 4!
-53078 here 4!
-53079 here 4!
-53080 here 4!
-53081 here 4!
-53082 here 4!
-53083 here 4!
-53084 here 4!
-53085 here 4!
-53086 here 4!
-53087 here 4!
-12992 here 4!
-12993 here 4!
-12994 here 4!
-12995 here 4!
-12996 here 4!
-12997 here 4!
-12998 here 4!
-12999 here 4!
-13000 here 4!
-13001 here 4!
-13002 here 4!
-13003 here 4!
-13004 here 4!
-13005 here 4!
-13006 here 4!
-13007 here 4!
-13008 here 4!
-13009 here 4!
-13010 here 4!
-13011 here 4!
-13012 here 4!
-13013 here 4!
-13014 here 4!
-13015 here 4!
-13016 here 4!
-13017 here 4!
-13018 here 4!
-13019 here 4!
-13020 here 4!
-13021 here 4!
-13022 here 4!
-13023 here 4!
-18752 here 4!
-18753 here 4!
-18754 here 4!
-18755 here 4!
-18756 here 4!
-18757 here 4!
-18758 here 4!
-18759 here 4!
-18760 here 4!
-18761 here 4!
-18762 here 4!
-18763 here 4!
-18764 here 4!
-18765 here 4!
-18766 here 4!
-18767 here 4!
-18768 here 4!
-18769 here 4!
-18770 here 4!
-18771 here 4!
-18772 here 4!
-18773 here 4!
-18774 here 4!
-18775 here 4!
-18776 here 4!
-18777 here 4!
-18778 here 4!
-18779 here 4!
-18780 here 4!
-18781 here 4!
-18782 here 4!
-18783 here 4!
-74208 here 4!
-74209 here 4!
-74210 here 4!
-74211 here 4!
-74212 here 4!
-74213 here 4!
-74214 here 4!
-74215 here 4!
-74216 here 4!
-74217 here 4!
-74218 here 4!
-74219 here 4!
-74220 here 4!
-74221 here 4!
-74222 here 4!
-74223 here 4!
-74224 here 4!
-74225 here 4!
-74226 here 4!
-74227 here 4!
-74228 here 4!
-74229 here 4!
-74230 here 4!
-74231 here 4!
-74232 here 4!
-74233 here 4!
-74234 here 4!
-74235 here 4!
-74236 here 4!
-74237 here 4!
-74238 here 4!
-74239 here 4!
-67904 here 4!
-67905 here 4!
-67906 here 4!
-67907 here 4!
-67908 here 4!
-67909 here 4!
-67910 here 4!
-67911 here 4!
-67912 here 4!
-67913 here 4!
-67914 here 4!
-67915 here 4!
-67916 here 4!
-67917 here 4!
-67918 here 4!
-67919 here 4!
-67920 here 4!
-67921 here 4!
-67922 here 4!
-67923 here 4!
-67924 here 4!
-67925 here 4!
-67926 here 4!
-67927 here 4!
-67928 here 4!
-67929 here 4!
-67930 here 4!
-67931 here 4!
-67932 here 4!
-67933 here 4!
-67934 here 4!
-67935 here 4!
-74016 here 4!
-74017 here 4!
-74018 here 4!
-74019 here 4!
-74020 here 4!
-74021 here 4!
-74022 here 4!
-74023 here 4!
-74024 here 4!
-74025 here 4!
-74026 here 4!
-74027 here 4!
-74028 here 4!
-74029 here 4!
-74030 here 4!
-74031 here 4!
-74032 here 4!
-74033 here 4!
-74034 here 4!
-74035 here 4!
-74036 here 4!
-74037 here 4!
-74038 here 4!
-74039 here 4!
-74040 here 4!
-74041 here 4!
-74042 here 4!
-74043 here 4!
-74044 here 4!
-74045 here 4!
-74046 here 4!
-74047 here 4!
-24224 here 4!
-24225 here 4!
-24226 here 4!
-24227 here 4!
-24228 here 4!
-24229 here 4!
-24230 here 4!
-24231 here 4!
-24232 here 4!
-24233 here 4!
-24234 here 4!
-24235 here 4!
-24236 here 4!
-24237 here 4!
-24238 here 4!
-24239 here 4!
-24240 here 4!
-24241 here 4!
-24242 here 4!
-24243 here 4!
-24244 here 4!
-24245 here 4!
-24246 here 4!
-24247 here 4!
-24248 here 4!
-24249 here 4!
-24250 here 4!
-24251 here 4!
-24252 here 4!
-24253 here 4!
-24254 here 4!
-24255 here 4!
-8032 here 4!
-8033 here 4!
-8034 here 4!
-8035 here 4!
-8036 here 4!
-8037 here 4!
-8038 here 4!
-8039 here 4!
-8040 here 4!
-8041 here 4!
-8042 here 4!
-8043 here 4!
-8044 here 4!
-8045 here 4!
-8046 here 4!
-8047 here 4!
-8048 here 4!
-8049 here 4!
-8050 here 4!
-8051 here 4!
-8052 here 4!
-8053 here 4!
-8054 here 4!
-8055 here 4!
-8056 here 4!
-8057 here 4!
-8058 here 4!
-8059 here 4!
-8060 here 4!
-8061 here 4!
-8062 here 4!
-8063 here 4!
-960 here 4!
-961 here 4!
-962 here 4!
-963 here 4!
-964 here 4!
-965 here 4!
-966 here 4!
-967 here 4!
-968 here 4!
-969 here 4!
-970 here 4!
-971 here 4!
-972 here 4!
-973 here 4!
-974 here 4!
-975 here 4!
-976 here 4!
-977 here 4!
-978 here 4!
-979 here 4!
-980 here 4!
-981 here 4!
-982 here 4!
-983 here 4!
-984 here 4!
-985 here 4!
-986 here 4!
-987 here 4!
-988 here 4!
-989 here 4!
-990 here 4!
-991 here 4!
-76160 here 4!
-76161 here 4!
-76162 here 4!
-76163 here 4!
-76164 here 4!
-76165 here 4!
-76166 here 4!
-76167 here 4!
-76168 here 4!
-76169 here 4!
-76170 here 4!
-76171 here 4!
-76172 here 4!
-76173 here 4!
-76174 here 4!
-76175 here 4!
-76176 here 4!
-76177 here 4!
-76178 here 4!
-76179 here 4!
-76180 here 4!
-76181 here 4!
-76182 here 4!
-76183 here 4!
-76184 here 4!
-76185 here 4!
-76186 here 4!
-76187 here 4!
-76188 here 4!
-76189 here 4!
-76190 here 4!
-76191 here 4!
-75904 here 4!
-75905 here 4!
-75906 here 4!
-75907 here 4!
-75908 here 4!
-75909 here 4!
-75910 here 4!
-75911 here 4!
-75912 here 4!
-75913 here 4!
-75914 here 4!
-75915 here 4!
-75916 here 4!
-75917 here 4!
-75918 here 4!
-75919 here 4!
-75920 here 4!
-75921 here 4!
-75922 here 4!
-75923 here 4!
-75924 here 4!
-75925 here 4!
-75926 here 4!
-75927 here 4!
-75928 here 4!
-75929 here 4!
-75930 here 4!
-75931 here 4!
-75932 here 4!
-75933 here 4!
-75934 here 4!
-75935 here 4!
-76032 here 4!
-76033 here 4!
-76034 here 4!
-76035 here 4!
-76036 here 4!
-76037 here 4!
-76038 here 4!
-76039 here 4!
-76040 here 4!
-76041 here 4!
-76042 here 4!
-76043 here 4!
-76044 here 4!
-76045 here 4!
-76046 here 4!
-76047 here 4!
-76048 here 4!
-76049 here 4!
-76050 here 4!
-76051 here 4!
-76052 here 4!
-76053 here 4!
-76054 here 4!
-76055 here 4!
-76056 here 4!
-76057 here 4!
-76058 here 4!
-76059 here 4!
-76060 here 4!
-76061 here 4!
-76062 here 4!
-76063 here 4!
-27520 here 4!
-27521 here 4!
-27522 here 4!
-27523 here 4!
-27524 here 4!
-27525 here 4!
-27526 here 4!
-27527 here 4!
-27528 here 4!
-27529 here 4!
-27530 here 4!
-27531 here 4!
-27532 here 4!
-27533 here 4!
-27534 here 4!
-27535 here 4!
-27536 here 4!
-27537 here 4!
-27538 here 4!
-27539 here 4!
-27540 here 4!
-27541 here 4!
-27542 here 4!
-27543 here 4!
-27544 here 4!
-27545 here 4!
-27546 here 4!
-27547 here 4!
-27548 here 4!
-27549 here 4!
-27550 here 4!
-27551 here 4!
-7520 here 4!
-7521 here 4!
-7522 here 4!
-7523 here 4!
-7524 here 4!
-7525 here 4!
-7526 here 4!
-7527 here 4!
-7528 here 4!
-7529 here 4!
-7530 here 4!
-7531 here 4!
-7532 here 4!
-7533 here 4!
-7534 here 4!
-7535 here 4!
-7536 here 4!
-7537 here 4!
-7538 here 4!
-7539 here 4!
-7540 here 4!
-7541 here 4!
-7542 here 4!
-7543 here 4!
-7544 here 4!
-7545 here 4!
-7546 here 4!
-7547 here 4!
-7548 here 4!
-7549 here 4!
-7550 here 4!
-7551 here 4!
-55680 here 4!
-55681 here 4!
-55682 here 4!
-55683 here 4!
-55684 here 4!
-55685 here 4!
-55686 here 4!
-55687 here 4!
-55688 here 4!
-55689 here 4!
-55690 here 4!
-55691 here 4!
-55692 here 4!
-55693 here 4!
-55694 here 4!
-55695 here 4!
-55696 here 4!
-55697 here 4!
-55698 here 4!
-55699 here 4!
-55700 here 4!
-55701 here 4!
-55702 here 4!
-55703 here 4!
-55704 here 4!
-55705 here 4!
-55706 here 4!
-55707 here 4!
-55708 here 4!
-55709 here 4!
-55710 here 4!
-55711 here 4!
-55776 here 4!
-55777 here 4!
-55778 here 4!
-55779 here 4!
-55780 here 4!
-55781 here 4!
-55782 here 4!
-55783 here 4!
-55784 here 4!
-55785 here 4!
-55786 here 4!
-55787 here 4!
-55788 here 4!
-55789 here 4!
-55790 here 4!
-55791 here 4!
-55792 here 4!
-55793 here 4!
-55794 here 4!
-55795 here 4!
-55796 here 4!
-55797 here 4!
-55798 here 4!
-55799 here 4!
-55800 here 4!
-55801 here 4!
-55802 here 4!
-55803 here 4!
-55804 here 4!
-55805 here 4!
-55806 here 4!
-55807 here 4!
-7136 here 4!
-7137 here 4!
-7138 here 4!
-7139 here 4!
-7140 here 4!
-7141 here 4!
-7142 here 4!
-7143 here 4!
-7144 here 4!
-7145 here 4!
-7146 here 4!
-7147 here 4!
-7148 here 4!
-7149 here 4!
-7150 here 4!
-7151 here 4!
-7152 here 4!
-7153 here 4!
-7154 here 4!
-7155 here 4!
-7156 here 4!
-7157 here 4!
-7158 here 4!
-7159 here 4!
-7160 here 4!
-7161 here 4!
-7162 here 4!
-7163 here 4!
-7164 here 4!
-7165 here 4!
-7166 here 4!
-7167 here 4!
-67936 here 4!
-67937 here 4!
-67938 here 4!
-67939 here 4!
-67940 here 4!
-67941 here 4!
-67942 here 4!
-67943 here 4!
-67944 here 4!
-67945 here 4!
-67946 here 4!
-67947 here 4!
-67948 here 4!
-67949 here 4!
-67950 here 4!
-67951 here 4!
-67952 here 4!
-67953 here 4!
-67954 here 4!
-67955 here 4!
-67956 here 4!
-67957 here 4!
-67958 here 4!
-67959 here 4!
-67960 here 4!
-67961 here 4!
-67962 here 4!
-67963 here 4!
-67964 here 4!
-67965 here 4!
-67966 here 4!
-67967 here 4!
-55648 here 4!
-55649 here 4!
-55650 here 4!
-55651 here 4!
-55652 here 4!
-55653 here 4!
-55654 here 4!
-55655 here 4!
-55656 here 4!
-55657 here 4!
-55658 here 4!
-55659 here 4!
-55660 here 4!
-55661 here 4!
-55662 here 4!
-55663 here 4!
-55664 here 4!
-55665 here 4!
-55666 here 4!
-55667 here 4!
-55668 here 4!
-55669 here 4!
-55670 here 4!
-55671 here 4!
-55672 here 4!
-55673 here 4!
-55674 here 4!
-55675 here 4!
-55676 here 4!
-55677 here 4!
-55678 here 4!
-55679 here 4!
-4064 here 4!
-4065 here 4!
-4066 here 4!
-4067 here 4!
-4068 here 4!
-4069 here 4!
-4070 here 4!
-4071 here 4!
-4072 here 4!
-4073 here 4!
-4074 here 4!
-4075 here 4!
-4076 here 4!
-4077 here 4!
-4078 here 4!
-4079 here 4!
-4080 here 4!
-4081 here 4!
-4082 here 4!
-4083 here 4!
-4084 here 4!
-4085 here 4!
-4086 here 4!
-4087 here 4!
-4088 here 4!
-4089 here 4!
-4090 here 4!
-4091 here 4!
-4092 here 4!
-4093 here 4!
-4094 here 4!
-4095 here 4!
-47584 here 4!
-47585 here 4!
-47586 here 4!
-47587 here 4!
-47588 here 4!
-47589 here 4!
-47590 here 4!
-47591 here 4!
-47592 here 4!
-47593 here 4!
-47594 here 4!
-47595 here 4!
-47596 here 4!
-47597 here 4!
-47598 here 4!
-47599 here 4!
-47600 here 4!
-47601 here 4!
-47602 here 4!
-47603 here 4!
-47604 here 4!
-47605 here 4!
-47606 here 4!
-47607 here 4!
-47608 here 4!
-47609 here 4!
-47610 here 4!
-47611 here 4!
-47612 here 4!
-47613 here 4!
-47614 here 4!
-47615 here 4!
-28064 here 4!
-28065 here 4!
-28066 here 4!
-28067 here 4!
-28068 here 4!
-28069 here 4!
-28070 here 4!
-28071 here 4!
-28072 here 4!
-28073 here 4!
-28074 here 4!
-28075 here 4!
-28076 here 4!
-28077 here 4!
-28078 here 4!
-28079 here 4!
-28080 here 4!
-28081 here 4!
-28082 here 4!
-28083 here 4!
-28084 here 4!
-28085 here 4!
-28086 here 4!
-28087 here 4!
-28088 here 4!
-28089 here 4!
-28090 here 4!
-28091 here 4!
-28092 here 4!
-28093 here 4!
-28094 here 4!
-28095 here 4!
-56608 here 4!
-56609 here 4!
-56610 here 4!
-56611 here 4!
-56612 here 4!
-56613 here 4!
-56614 here 4!
-56615 here 4!
-56616 here 4!
-56617 here 4!
-56618 here 4!
-56619 here 4!
-56620 here 4!
-56621 here 4!
-56622 here 4!
-56623 here 4!
-56624 here 4!
-56625 here 4!
-56626 here 4!
-56627 here 4!
-56628 here 4!
-56629 here 4!
-56630 here 4!
-56631 here 4!
-56632 here 4!
-56633 here 4!
-56634 here 4!
-56635 here 4!
-56636 here 4!
-56637 here 4!
-56638 here 4!
-56639 here 4!
-55616 here 4!
-55617 here 4!
-55618 here 4!
-55619 here 4!
-55620 here 4!
-55621 here 4!
-55622 here 4!
-55623 here 4!
-55624 here 4!
-55625 here 4!
-55626 here 4!
-55627 here 4!
-55628 here 4!
-55629 here 4!
-55630 here 4!
-55631 here 4!
-55632 here 4!
-55633 here 4!
-55634 here 4!
-55635 here 4!
-55636 here 4!
-55637 here 4!
-55638 here 4!
-55639 here 4!
-55640 here 4!
-55641 here 4!
-55642 here 4!
-55643 here 4!
-55644 here 4!
-55645 here 4!
-55646 here 4!
-55647 here 4!
-[FT][ERROR] CUDA runtime error: an illegal memory access was encountered /home/n2/junsik/lab/FasterTransformer/src/fastertransformer/models/llama/LLaMA.cc:288 
+tensor([[[ 1.1572e+00,  9.2529e-01, -3.0586e+00,  1.4336e+00,  1.2324e+00,
+           6.9482e-01,  2.8066e+00, -1.6199e-01],
+         [ 2.0586e+00,  3.0981e-01, -5.1855e-01,  7.3193e-01,  9.4531e-01,
+          -2.3379e+00,  4.3203e+00, -3.0127e-01],
+         [ 1.8740e+00,  6.2793e-01,  4.2236e-01,  3.7539e+00, -1.1133e+00,
+          -2.6582e+00,  1.8877e+00, -3.1787e-01],
+         [ 1.7598e+00,  2.7832e+00, -2.1523e+00,  6.5234e-01, -1.5889e+00,
+          -1.5039e+00,  1.3135e+00, -1.5356e-01],
+         [ 5.1172e-01,  2.6416e-01, -8.0566e-01,  1.9551e+00, -1.4355e+00,
+          -1.7471e+00,  1.0898e+00, -6.0547e-01],
+         [ 1.8955e+00,  4.2432e-01, -4.6411e-01,  2.7363e+00,  7.2021e-01,
+          -3.7305e+00,  1.3613e+00, -8.9697e-01],
+         [ 1.5098e+00, -1.6885e+00, -5.1855e-01,  2.0664e+00,  1.2705e+00,
+          -5.9141e+00,  1.0215e+00,  8.2324e-01],
+         [ 1.3467e+00, -2.3418e+00, -6.2988e-01,  2.1738e+00, -1.6699e+00,
+          -1.5986e+00,  1.8469e-01,  8.9014e-01],
+         [ 1.1094e+00, -1.9629e+00, -2.9727e+00,  3.3906e+00,  2.8789e+00,
+          -4.6602e+00,  2.1660e+00, -4.0747e-01],
+         [-1.5986e+00, -1.2949e+00,  5.2100e-01,  2.5879e+00, -1.3232e+00,
+          -2.6196e-01, -1.5156e+00, -4.8706e-01],
+         [-1.0016e-01, -1.2676e+00, -5.7129e-01,  3.2251e-01, -1.6768e+00,
+          -1.0146e+00, -6.8555e-01, -2.4707e+00],
+         [ 1.0439e+00, -2.0586e+00, -2.9492e+00, -4.8975e-01, -7.6465e-01,
+          -3.6387e+00,  4.0479e-01, -1.4404e+00],
+         [ 6.1084e-01, -2.4492e+00, -6.6943e-01,  9.9316e-01, -8.9404e-01,
+          -1.0508e+00,  1.9961e+00, -5.7422e-01],
+         [-1.7432e-01,  1.4326e+00,  1.6699e+00,  2.3300e-02, -2.0293e+00,
+           2.2773e+00,  1.0869e+00,  1.3545e+00],
+         [ 1.1504e+00, -1.7695e+00, -1.5381e-01,  7.2815e-02,  2.4590e+00,
+          -5.6367e+00,  8.4180e-01, -5.7080e-01],
+         [ 1.7061e+00, -1.9104e-01,  7.7930e-01,  2.2754e+00, -3.6102e-02,
+           7.4756e-01,  1.8350e+00, -5.9814e-01],
+         [ 2.8047e+00,  7.2900e-01, -5.0342e-01,  1.5576e+00, -4.1284e-01,
+           5.1074e-01,  6.7627e-01, -6.9141e-01],
+         [-1.7505e-01,  5.6201e-01,  1.3447e+00,  2.8516e+00, -6.1572e-01,
+           2.2617e+00, -2.8789e+00,  1.6934e+00],
+         [ 7.7344e-01, -1.1406e+00, -2.4622e-01,  9.0332e-01, -1.4639e+00,
+           1.2021e+00,  2.1875e+00,  3.1016e+00],
+         [-4.1602e-01, -2.4941e+00, -1.2441e+00,  1.3359e+00,  2.8086e+00,
+          -2.5742e+00,  2.6392e-01, -1.0908e+00],
+         [ 8.4912e-01, -3.0347e-01, -1.0566e+00, -4.0308e-01, -3.9600e-01,
+           1.8057e+00,  1.6182e+00,  1.5547e+00],
+         [ 1.3730e+00,  1.5537e+00,  8.3838e-01,  6.0254e-01,  1.4717e+00,
+           1.5850e+00,  3.4570e-01,  2.8203e+00],
+         [ 2.0430e+00,  2.5508e+00,  3.7183e-01,  5.7343e-02, -2.1545e-01,
+           1.1084e+00,  8.7646e-01, -8.7451e-01],
+         [ 1.6904e+00,  1.2568e+00, -6.0498e-01,  4.9854e-01, -6.6895e-01,
+           1.3438e+00,  1.7568e+00, -3.0200e-01],
+         [ 1.9502e+00,  2.1074e+00,  4.4946e-01, -1.2314e+00, -5.9082e-01,
+           2.7368e-01, -2.1660e+00,  1.2988e+00],
+         [-2.4824e+00,  1.2686e+00, -1.7542e-01, -4.9316e-01, -1.0889e+00,
+          -1.7285e+00, -6.2354e-01, -8.5742e-01],
+         [ 1.2090e+00, -6.7578e-01, -3.3398e-01,  2.3819e-02, -5.7031e-01,
+           3.0908e-01,  1.9180e+00,  9.3311e-01],
+         [-1.3027e+00, -4.8779e-01,  8.3887e-01,  2.9902e+00, -3.0469e+00,
+          -1.4014e+00, -2.3574e+00, -1.1182e+00],
+         [-2.4744e-01, -1.4277e+00,  6.1230e-01, -1.9910e-01, -2.0977e+00,
+          -7.0703e-01, -1.5342e+00, -3.5625e+00],
+         [-6.4697e-03, -2.0059e+00, -1.4268e+00, -1.9326e+00, -4.7241e-01,
+          -3.5059e+00,  7.1729e-01, -1.1328e+00],
+         [ 5.5878e-02, -5.7373e-01,  4.7168e-01, -2.0742e+00, -2.0527e+00,
+           6.6846e-01,  3.0469e-01, -6.2988e-02],
+         [ 1.0547e+00, -7.5049e-01,  4.1650e-01,  6.0638e-02,  2.7441e+00,
+          -1.8320e+00,  2.1055e+00,  1.3196e-01],
+         [ 5.9521e-01,  6.7139e-01,  8.5254e-01, -2.1484e-01, -4.7516e-02,
+          -5.1416e-01,  4.3188e-01, -1.2930e+00],
+         [ 2.0742e+00, -1.0430e+00,  7.9199e-01,  3.8989e-01,  1.6152e+00,
+          -2.1699e+00,  2.1230e+00,  1.4478e-01],
+         [ 6.9092e-01,  6.7041e-01, -1.4793e-02,  2.2324e+00, -7.4023e-01,
+          -6.2207e-01,  1.1172e+00,  1.7354e+00],
+         [-2.5840e+00, -3.7036e-01, -7.3059e-02,  1.3955e+00, -1.1367e+00,
+          -5.0732e-01, -1.1914e+00,  3.1836e+00],
+         [ 1.1006e+00, -6.0986e-01, -6.4258e-01,  1.7002e+00, -3.5718e-01,
+          -1.5393e-01,  3.6377e-01,  6.3281e-01],
+         [-8.5303e-01,  1.2422e+00,  2.0532e-01,  1.9004e+00, -1.0049e+00,
+           4.4019e-01, -2.8638e-01,  2.8223e+00],
+         [-5.8594e-01, -4.3335e-01, -1.5293e+00,  3.7207e+00, -1.2861e+00,
+          -6.4697e-01,  1.2061e+00,  1.5454e-01],
+         [-9.3652e-01, -5.9814e-01, -3.1860e-01,  9.0771e-01, -1.9707e+00,
+           2.1692e-01, -2.6138e-02, -2.2656e+00],
+         [ 1.9229e+00,  4.5972e-01, -4.3140e-01, -1.8433e-01,  8.9600e-01,
+           6.7041e-01,  6.0742e-01, -2.9590e-01],
+         [ 1.2754e+00,  1.0928e+00,  2.2129e+00, -2.4121e+00,  1.0352e+00,
+          -2.9251e-02, -3.7090e+00, -4.6436e-01],
+         [ 4.7021e-01, -1.7520e+00, -1.5820e+00,  9.3457e-01,  1.0469e+00,
+          -1.8809e+00, -5.4883e-01, -1.6760e-01],
+         [-2.1790e-02, -6.2402e-01, -7.2168e-01,  9.6143e-01,  1.9160e+00,
+          -1.0010e+00,  1.9658e+00,  2.3223e+00],
+         [-1.3623e+00,  1.0225e+00, -2.2717e-01,  2.7480e+00, -9.2920e-01,
+          -3.4424e-02, -1.9604e-01,  3.0000e+00],
+         [-2.7129e+00, -1.5938e+00, -1.1660e+00, -5.1178e-02, -2.0645e+00,
+          -1.7090e+00, -1.7566e-01,  1.2686e+00],
+         [-1.7168e+00, -3.7988e-01, -1.5527e+00,  1.0225e+00,  9.2188e-01,
+          -4.7539e+00,  1.4424e+00,  2.5762e+00],
+         [-6.0693e-01, -1.0420e+00,  1.9980e+00, -7.6370e-03, -3.4707e+00,
+          -1.3105e+00,  2.2871e+00,  1.6904e+00],
+         [-7.5928e-01,  9.2651e-02, -1.1309e+00,  7.2363e-01,  5.2002e-01,
+          -2.2324e+00,  1.4844e+00, -2.5513e-01],
+         [ 4.5312e-01,  1.3501e-01, -2.5898e+00,  2.7344e+00, -2.3047e+00,
+           1.4932e+00,  1.5381e+00,  9.0479e-01],
+         [-4.3237e-01, -2.6074e-01, -1.3613e+00,  4.9766e+00,  1.3611e-01,
+           1.7881e+00,  6.2354e-01,  3.1582e+00],
+         [-1.7881e+00,  1.6855e+00, -1.1602e+00,  2.8711e+00, -1.3262e+00,
+          -1.2686e+00,  8.9258e-01,  2.2324e+00],
+         [ 6.9531e-01,  2.3239e-02, -1.6855e+00,  1.0052e-01, -9.2090e-01,
+           1.3320e+00, -7.3438e-01,  1.4482e+00],
+         [-1.6152e+00, -2.1836e+00, -2.0020e+00, -7.8711e-01,  3.6230e-01,
+          -1.2686e+00, -7.3926e-01,  2.2559e+00],
+         [-6.4600e-01, -1.0907e-01,  2.4707e-01,  1.9238e+00, -2.4551e+00,
+           7.5488e-01,  7.6758e-01,  2.9512e+00],
+         [ 2.2815e-01, -1.5703e+00,  7.6953e-01,  1.4502e+00,  3.9038e-01,
+          -6.1768e-01,  2.5352e+00,  3.0493e-01],
+         [-1.3594e+00, -9.3457e-01, -1.6748e+00, -5.8105e-02, -4.3945e-01,
+          -1.9102e+00,  2.4219e+00,  2.5938e+00],
+         [ 1.5264e+00,  7.4561e-01,  7.6562e-01, -1.2500e+00,  3.9233e-01,
+          -3.6035e+00,  9.5996e-01,  1.6992e+00],
+         [-5.0342e-01,  1.4795e+00,  1.8555e+00, -3.0625e+00, -9.5068e-01,
+           1.0422e-02, -3.5449e+00,  1.4229e+00],
+         [-1.5820e+00, -6.5796e-02, -1.1943e+00, -7.2754e-01, -2.6914e+00,
+          -3.7031e+00, -7.2998e-01,  7.1973e-01],
+         [-3.2178e-01, -4.1675e-01, -9.8730e-01,  1.9507e-01,  3.9062e-01,
+          -4.7607e-01,  3.0640e-01, -9.2090e-01],
+         [-9.4678e-01, -1.1289e+00, -2.7783e-01, -1.0068e+00,  2.3262e+00,
+          -2.6094e+00,  2.9102e+00,  1.2461e+00],
+         [ 1.9639e+00, -3.3057e-01,  7.2070e-01,  1.5176e+00,  9.9268e-01,
+          -3.4121e+00,  3.2959e-01,  1.9121e+00],
+         [ 1.1846e+00, -3.3472e-01, -3.1055e-01,  1.7959e+00,  3.5938e-01,
+          -5.5469e-01,  3.2300e-01,  5.0830e-01],
+         [-6.8408e-01,  2.2156e-01, -1.1064e+00,  1.6445e+00, -1.5068e+00,
+           2.5732e-01, -1.5225e+00,  3.7344e+00],
+         [-1.9111e+00, -7.1045e-01, -1.9805e+00,  1.2002e+00, -2.2988e+00,
+          -9.1064e-01, -4.3848e-01,  1.2109e+00],
+         [ 6.7725e-01,  1.3271e+00, -8.5059e-01,  2.4844e+00, -7.7246e-01,
+           1.4893e+00,  8.6230e-01,  2.1191e-01],
+         [ 9.0869e-01,  4.9951e-01, -1.2129e+00, -1.3477e+00, -1.9395e+00,
+           1.5820e+00,  8.9294e-02,  1.0488e+00],
+         [-2.3804e-01,  4.6582e-01,  4.9667e-03,  2.6406e+00, -5.0098e-01,
+          -4.0820e-01,  2.3132e-01,  3.3105e-01],
+         [ 7.8906e-01,  1.3164e+00,  1.9824e-01,  2.4043e+00,  1.4307e-01,
+           9.7705e-01, -1.6711e-01, -1.1270e+00],
+         [-1.0254e+00,  5.2930e-01,  5.8350e-01,  2.4805e+00, -1.1318e+00,
+          -1.9141e+00, -1.2158e+00, -1.8066e+00],
+         [-7.0654e-01, -1.3477e+00,  6.5674e-01,  8.9600e-01, -1.8652e+00,
+          -1.8193e+00, -8.3203e-01, -3.9277e+00],
+         [-1.4502e-01, -1.8389e+00, -9.3896e-01,  5.5029e-01, -1.2002e+00,
+          -3.9316e+00, -3.2422e-01, -3.7188e+00],
+         [-3.0200e-01,  6.7578e-01,  7.7979e-01, -3.0103e-01, -1.1797e+00,
+          -9.4141e-01, -8.1055e-01, -2.3066e+00],
+         [ 9.3359e-01,  1.6924e+00,  1.6045e+00,  9.4629e-01,  3.2300e-01,
+          -2.8535e+00,  9.5068e-01, -1.0762e+00],
+         [ 1.9836e-01,  6.1523e-01,  7.2949e-01,  3.7891e+00,  1.2886e-02,
+          -2.7520e+00,  1.1543e+00,  1.4297e+00]],
+
+        [[ 1.1572e+00,  9.2529e-01, -3.0586e+00,  1.4336e+00,  1.2324e+00,
+           6.9482e-01,  2.8066e+00, -1.6199e-01],
+         [ 1.0312e+00, -1.6318e+00,  1.7246e+00, -2.7383e+00, -9.5410e-01,
+          -4.3457e-01,  1.3171e-01,  9.2139e-01],
+         [ 5.9473e-01, -4.7705e-01,  6.4502e-01, -5.8060e-03, -1.1328e+00,
+          -1.3975e+00,  8.9478e-02,  2.2949e+00],
+         [ 7.9199e-01, -3.5864e-01, -1.1748e+00,  1.6895e+00,  8.4570e-01,
+          -3.6230e+00,  2.3711e+00,  4.7388e-01],
+         [ 7.3682e-01, -1.4297e+00, -3.2935e-01,  6.2109e-01,  6.7676e-01,
+          -4.5469e+00,  1.1973e+00,  8.0957e-01],
+         [ 6.8750e-01, -1.0752e+00, -1.1631e+00,  3.0029e-01, -1.0537e+00,
+          -1.6934e+00,  9.9170e-01,  2.0391e+00],
+         [-7.8662e-01, -4.5850e-01,  2.8857e-01,  1.5784e-01,  1.6133e+00,
+          -2.5430e+00,  2.0137e+00,  2.5801e+00],
+         [ 2.3848e+00, -8.4473e-01,  3.2080e-01,  5.0879e-01, -5.6494e-01,
+          -1.6621e+00,  4.0742e+00,  1.7188e+00],
+         [-3.9087e-01,  1.6611e+00,  2.3242e+00,  1.8188e-01, -7.4365e-01,
+           1.0571e-01, -1.9717e+00,  6.4893e-01],
+         [ 8.2715e-01,  2.8047e+00,  1.1719e+00,  1.3301e+00, -2.2734e+00,
+           2.4336e+00, -2.4707e+00, -5.8105e-01],
+         [ 1.3506e+00,  1.8662e+00,  1.0176e+00, -1.1982e+00, -2.5977e-01,
+           1.5459e+00,  4.9243e-01,  3.7129e+00],
+         [ 1.3105e+00,  1.3037e+00, -1.9958e-01, -9.6777e-01,  1.4258e+00,
+          -3.0078e+00, -1.7493e-01,  2.4492e+00],
+         [-8.9502e-01, -6.1523e-01,  2.5352e+00, -1.6523e+00, -2.3340e+00,
+          -1.6016e+00, -2.5293e+00,  1.3008e+00],
+         [ 9.6631e-01, -1.3408e+00,  2.5997e-03, -1.4414e+00,  2.2285e+00,
+          -1.2988e+00, -5.1611e-01,  4.4434e-01],
+         [ 1.0547e+00,  1.7004e-01, -1.2686e+00, -2.4785e+00,  7.7637e-01,
+          -3.6895e+00,  1.6318e+00,  8.6035e-01],
+         [ 5.7324e-01,  1.3550e-01, -1.5488e+00, -3.7344e+00,  1.6807e+00,
+          -3.3809e+00,  2.6055e+00,  6.9287e-01],
+         [ 1.8916e+00, -1.9849e-01, -3.0078e-01, -1.9756e+00,  2.1758e+00,
+          -2.6895e+00,  1.6602e+00,  3.8340e+00],
+         [ 1.2383e+00,  3.6060e-01, -1.4160e+00,  3.6694e-01,  2.0996e+00,
+          -1.8418e+00,  2.4902e+00,  2.5859e+00],
+         [-1.5352e+00,  3.1211e+00,  7.6123e-01,  4.4507e-01, -5.0293e-01,
+           1.8042e-01, -1.7412e+00,  1.6113e+00],
+         [-2.9443e-01,  1.7217e+00, -1.4756e+00,  7.8369e-01, -2.0776e-01,
+          -1.5186e-01, -9.8096e-01, -3.5986e-01],
+         [ 1.1123e+00,  2.5195e+00, -2.5430e+00,  4.0845e-01,  3.8555e+00,
+           1.9883e+00,  1.2715e+00,  4.3398e+00],
+         [-7.0605e-01,  4.0210e-01, -4.4141e-01,  8.5449e-01, -5.3027e-01,
+          -1.3320e+00, -1.4697e+00,  2.2324e+00],
+         [ 1.5205e+00,  9.7461e-01, -1.3545e+00, -7.2949e-01,  4.3008e+00,
+          -1.9482e+00,  1.7178e+00,  3.4805e+00],
+         [-1.9434e+00, -1.0651e-01,  1.3828e+00,  3.5840e-01,  1.6914e+00,
+          -1.6416e+00, -9.9561e-01,  2.5410e+00],
+         [ 1.2197e+00,  1.7881e+00, -9.0283e-01, -2.1851e-01,  1.5449e+00,
+          -1.2373e+00, -3.0664e+00,  2.8926e+00],
+         [ 9.0918e-01,  2.0977e+00, -2.3965e+00,  1.2280e-01,  3.8652e+00,
+          -1.8818e+00,  5.1807e-01,  2.5234e+00],
+         [ 4.2798e-01,  4.3042e-01, -3.5693e-01, -3.2012e+00,  2.2668e-01,
+           8.4375e-01,  2.7090e+00,  1.2100e+00],
+         [-2.4805e+00,  1.2568e+00, -2.9336e+00, -1.2881e+00,  4.4609e+00,
+          -1.6768e+00,  3.2891e+00,  1.8213e+00],
+         [-2.6270e+00,  3.1787e-01, -2.0000e+00, -1.1553e+00,  3.3887e+00,
+           1.7285e+00,  2.4258e+00,  2.5527e+00],
+         [-6.1426e-01,  1.0742e+00, -1.5410e+00, -4.0942e-01,  2.7168e+00,
+           2.4863e+00,  1.0957e+00,  1.4590e+00],
+         [-1.1182e+00, -2.3865e-02, -1.7490e+00,  8.3496e-01, -1.9561e+00,
+          -1.8848e+00, -1.9229e+00,  5.1611e-01],
+         [-2.1055e+00,  3.0469e+00, -2.9272e-01, -1.0781e+00,  3.2070e+00,
+           2.1309e+00,  2.4297e+00,  1.6943e+00],
+         [ 1.1787e+00, -3.2959e-01, -2.1758e+00, -1.6299e+00,  5.0586e+00,
+          -5.4883e+00,  1.6143e+00,  4.6265e-01],
+         [ 2.3516e+00,  1.2347e-01, -1.6982e+00, -9.9609e-01,  2.5742e+00,
+          -8.7158e-01,  2.3398e+00,  1.8252e+00],
+         [-2.0547e+00,  2.5332e+00, -3.7903e-02,  9.1309e-02, -1.4570e+00,
+           3.4009e-01,  9.6094e-01,  9.1748e-01],
+         [-2.3938e-01,  4.6167e-01, -1.3438e+00, -3.5181e-01,  5.4062e+00,
+          -7.1240e-01, -2.8955e-01,  3.0176e+00],
+         [-1.3525e+00,  1.1768e+00, -1.3691e+00, -1.8271e+00,  6.1484e+00,
+           4.0674e-01,  2.5508e+00,  2.5586e-01],
+         [ 6.1377e-01, -3.4058e-01, -8.1445e-01, -1.6101e-01,  1.9492e+00,
+          -2.6758e+00,  1.7764e+00,  8.2520e-01],
+         [-2.0764e-01, -7.5439e-01, -2.2388e-01,  1.0488e+00,  2.8672e+00,
+          -5.6680e+00,  3.6401e-01, -3.4595e-01],
+         [-5.4688e-02, -4.9146e-01, -5.6091e-02,  1.0785e-01,  2.5996e+00,
+          -4.4609e+00,  9.0088e-01,  9.5654e-01],
+         [ 4.9634e-01,  1.2236e+00, -1.0078e+00, -1.3242e+00,  3.4980e+00,
+          -1.8574e+00,  1.0146e+00,  1.5088e+00],
+         [-3.8940e-01,  6.2256e-01, -2.3945e+00, -2.6035e+00,  4.4727e+00,
+          -5.3867e+00,  4.7583e-01, -7.4316e-01],
+         [-3.1934e-01,  1.0469e+00, -2.5801e+00, -1.1123e+00,  4.2695e+00,
+          -3.3496e+00,  1.2148e+00, -1.3281e-01],
+         [ 2.0293e+00,  1.4922e+00, -2.7949e+00, -2.5024e-01,  3.4902e+00,
+           6.5979e-02,  2.2695e+00,  1.0615e+00],
+         [ 1.1035e+00,  4.1992e+00,  2.5859e+00,  9.9756e-01,  2.2930e+00,
+           1.4978e-01, -2.3730e+00,  3.3691e+00],
+         [-1.4912e+00,  1.3369e+00, -2.5562e-01,  2.1875e+00,  2.1753e-01,
+           2.1230e+00, -2.1118e-01, -3.3521e-01],
+         [-3.2666e-01,  1.1074e+00, -8.9990e-01,  7.1338e-01,  6.1367e+00,
+          -2.4512e+00,  1.4121e+00,  3.8892e-01],
+         [ 1.8115e+00,  2.8086e+00, -2.4707e+00, -1.1211e+00,  3.7520e+00,
+           3.9331e-01,  1.2383e+00,  8.0518e-01],
+         [-1.5811e+00,  2.7500e+00,  1.9639e+00,  1.0264e+00, -8.7305e-01,
+           1.1738e+00, -3.7695e-01,  1.0107e+00],
+         [-1.8906e+00,  1.0215e+00,  1.7949e+00, -3.9087e-01, -1.2031e+00,
+          -1.8787e-01, -2.3008e+00,  1.1797e+00],
+         [ 4.9414e-01,  1.1182e+00, -3.6499e-01, -1.7217e+00,  6.6289e+00,
+          -2.0410e+00,  1.6348e+00,  8.9795e-01],
+         [ 1.9736e+00,  2.9238e+00, -2.5840e+00, -8.2910e-01,  3.3457e+00,
+           4.1406e-01,  5.4053e-01,  7.8809e-01],
+         [ 1.3513e-01,  9.2920e-01, -4.7095e-01, -3.5107e-01,  1.0947e+00,
+           1.5811e+00, -2.8662e-01,  6.8115e-01],
+         [ 5.2148e-01,  6.2939e-01, -4.8535e-01, -3.8110e-01,  6.5234e+00,
+          -1.6211e+00,  2.0059e+00,  9.7900e-01],
+         [ 1.9873e+00,  2.0664e+00, -2.9688e+00, -9.3896e-01,  3.3945e+00,
+           1.8274e-01,  9.4775e-01,  1.2383e+00],
+         [-1.8828e+00, -2.2815e-01, -2.1094e+00,  7.1729e-01,  2.6426e+00,
+           5.3467e-01,  1.7554e-01, -8.7402e-01],
+         [ 5.0684e-01,  4.0112e-01, -2.8125e-01,  8.0908e-01,  7.1484e+00,
+          -1.4990e+00,  9.1113e-01,  3.6353e-01],
+         [ 1.5771e+00,  2.3027e+00, -3.0410e+00, -1.4043e+00,  3.5586e+00,
+           1.1992e+00,  1.1816e+00,  1.1133e+00],
+         [ 4.0833e-02,  1.2183e-01,  1.0332e+00,  3.5879e+00, -1.5991e-01,
+          -4.9585e-01,  3.9575e-01,  2.4531e+00],
+         [ 1.3125e+00,  2.0273e+00,  2.5957e+00,  2.3203e+00,  1.9561e+00,
+           1.9834e+00, -1.2988e+00,  1.2891e-01],
+         [ 1.1309e+00,  6.2891e-01,  1.2866e-01,  1.2246e+00,  6.7305e+00,
+          -2.0195e+00,  1.2236e+00, -4.0308e-01],
+         [ 1.6406e+00,  2.6055e+00, -2.3926e+00, -8.4570e-01,  3.2383e+00,
+           9.7705e-01,  5.7617e-01, -3.6407e-02],
+         [-9.6680e-01, -2.5146e-01, -1.0713e+00,  3.3887e+00,  1.0088e+00,
+           1.2927e-01,  1.3008e+00,  1.5752e+00],
+         [-1.0881e-03,  5.3418e-01, -3.1982e-01,  5.5176e-01,  6.6133e+00,
+          -1.8926e+00,  2.3535e+00, -2.0050e-02],
+         [ 4.8584e-01,  2.1270e+00, -2.2734e+00,  1.6565e-01,  4.3828e+00,
+           9.6436e-02,  2.3242e+00,  4.1528e-01],
+         [-7.8809e-01,  1.5039e+00,  8.4961e-01, -1.2140e-01,  9.1064e-01,
+           1.6040e-01, -1.4678e+00,  5.8447e-01],
+         [ 1.2188e+00,  1.4668e+00,  1.1206e-01, -1.0557e+00,  4.9258e+00,
+          -2.9551e+00,  2.6514e-01,  1.1240e+00],
+         [ 9.9170e-01,  6.1670e-01, -1.0370e-01, -5.7422e-01,  3.3105e+00,
+          -4.2109e+00,  1.2754e+00,  9.2920e-01],
+         [ 4.7836e-03,  1.4375e+00, -3.4973e-02, -1.6436e+00, -1.3027e+00,
+           1.7920e+00, -9.5947e-01,  3.2754e+00],
+         [ 3.6963e-01, -5.8154e-01, -4.6338e-01, -1.4600e+00,  3.4902e+00,
+           2.7129e+00, -6.8701e-01,  4.0210e-01],
+         [ 8.1152e-01,  3.9727e+00, -4.1846e-01, -1.3398e+00,  1.1973e+00,
+           1.3193e+00,  1.2471e+00, -9.0723e-01],
+         [-6.4990e-01,  8.7109e-01,  6.5186e-02, -2.1445e+00,  1.5898e+00,
+           7.2021e-01, -1.3281e+00, -4.0527e-01],
+         [-2.4121e+00,  2.8477e+00,  5.6201e-01, -2.1509e-01,  7.2607e-01,
+           1.6006e+00, -5.8154e-01, -8.4033e-01],
+         [-1.9414e+00,  2.5078e+00, -1.5098e+00, -7.4072e-01,  1.4092e+00,
+          -8.5352e-01,  1.5713e+00, -5.3223e-01],
+         [-2.2129e+00,  2.2422e+00, -9.7266e-01, -7.4268e-01,  6.1182e-01,
+          -3.3301e+00,  8.4131e-01, -1.5215e+00],
+         [-3.9478e-01,  1.4424e+00,  4.2773e-01, -1.7393e+00,  4.0859e+00,
+          -3.5840e+00, -2.8906e-01, -1.0254e-01]],
+
+        [[ 1.1572e+00,  9.2529e-01, -3.0586e+00,  1.4336e+00,  1.2324e+00,
+           6.9482e-01,  2.8066e+00, -1.6199e-01],
+         [ 6.3574e-01,  8.3545e-01, -8.7097e-02,  1.1113e+00, -1.1875e+00,
+          -7.7441e-01,  9.0137e-01,  1.8369e+00],
+         [ 1.3733e-01,  7.6514e-01, -3.8066e+00,  8.2471e-01,  1.2012e+00,
+          -1.2842e+00,  2.1348e+00,  1.7393e+00],
+         [ 6.4209e-01,  1.3721e+00,  8.2947e-02,  7.5830e-01,  9.7363e-01,
+          -9.5605e-01,  1.7822e+00,  1.6855e+00],
+         [ 1.0781e+00,  2.0654e-01, -8.6377e-01,  2.5195e+00,  1.1992e+00,
+          -3.3555e+00,  2.2402e+00, -3.7628e-02],
+         [-2.0508e-01, -1.2168e+00, -1.6631e+00,  1.2197e+00,  1.1621e+00,
+          -4.6016e+00,  2.0586e+00,  1.2754e+00],
+         [ 1.2227e+00, -1.9844e+00, -3.4961e-01,  2.1875e-01, -1.5527e+00,
+          -1.8135e+00,  1.0537e+00,  1.8613e+00],
+         [ 2.2227e+00, -3.1421e-01, -1.6289e+00,  1.8447e+00,  8.7207e-01,
+          -4.8901e-01,  3.3652e+00,  6.8555e-01],
+         [-1.8955e+00, -1.0264e+00, -6.7090e-01,  9.7656e-01, -2.1484e+00,
+           3.3740e-01, -2.6504e+00, -5.5615e-01],
+         [-2.1069e-01, -1.9043e+00,  1.9844e+00,  9.3994e-01, -4.5532e-01,
+          -7.8552e-02,  1.3740e+00, -6.5820e-01],
+         [ 1.5518e+00, -1.5381e+00,  2.5078e+00,  8.8135e-01,  8.7646e-01,
+           4.2389e-02,  1.4385e+00,  9.4421e-02],
+         [ 2.4463e-01,  2.1797e+00, -1.2354e+00,  1.5020e+00,  1.2568e+00,
+           3.9453e-01,  3.1797e+00,  2.2583e-01],
+         [ 7.5537e-01,  2.4453e+00,  1.0822e-01,  5.0079e-02,  8.2959e-01,
+           8.3105e-01,  2.8164e+00,  4.8560e-01],
+         [ 1.3525e+00, -1.0146e+00,  3.3340e+00,  2.4941e+00,  2.3008e+00,
+          -1.6465e+00,  3.2617e+00, -7.7454e-02],
+         [ 5.8380e-02, -1.8076e+00, -1.1172e+00,  1.7021e+00,  3.0508e+00,
+          -4.5117e+00,  2.0254e+00, -1.8799e-01],
+         [ 5.5225e-01, -2.7051e+00,  1.2871e+00,  2.4785e+00,  2.2305e+00,
+          -2.1484e+00,  1.5449e+00, -9.7266e-01],
+         [ 2.0273e+00, -1.5605e+00, -1.2275e+00,  2.5977e+00,  4.2529e-01,
+           4.4580e-01,  2.8906e+00, -1.1250e+00],
+         [-1.7969e-01, -3.3457e+00,  7.6660e-01,  1.8037e+00, -1.7588e+00,
+          -2.3594e+00,  1.4316e+00, -5.5957e-01],
+         [ 6.7529e-01, -2.0059e+00,  5.3418e-01, -4.8413e-01, -9.5557e-01,
+          -1.7139e-01, -4.0314e-02, -8.7109e-01],
+         [-1.4492e+00, -1.4131e+00,  8.4619e-01,  1.2969e+00, -5.9961e-01,
+           2.4646e-01,  3.3032e-01, -1.2363e+00],
+         [ 1.7080e+00, -1.7881e+00,  1.9092e+00,  4.8047e-01,  8.1592e-01,
+           3.6255e-01,  3.0078e-01,  8.4766e-01],
+         [ 8.6133e-01, -1.2129e+00, -1.5176e+00,  2.8477e+00, -5.3650e-02,
+           6.4990e-01,  3.7344e+00,  2.1797e+00],
+         [ 8.5742e-01, -4.5215e-01, -1.9717e+00,  1.6738e+00, -9.7949e-01,
+           9.7998e-01,  3.6621e+00,  1.9082e+00],
+         [ 1.1299e+00, -2.6992e+00, -1.1748e+00,  1.6816e+00,  5.2588e-01,
+           3.5293e+00,  1.9062e+00,  1.1436e+00],
+         [ 5.4504e-02, -2.7480e+00,  1.1084e+00,  1.7539e+00,  2.1680e+00,
+           5.0488e-01, -6.3916e-01, -4.5508e-01],
+         [ 1.1348e+00, -8.7354e-01,  4.7144e-01,  5.3497e-02,  2.1172e+00,
+           2.3145e+00, -4.3726e-01,  1.3242e+00],
+         [ 1.0382e-01,  4.7827e-01,  3.8989e-01, -8.3984e-02, -2.4453e+00,
+           4.6484e+00, -2.0449e+00,  2.8711e+00],
+         [ 8.1360e-02, -2.5332e+00,  6.5039e-01,  2.2930e+00,  4.3555e+00,
+          -6.4209e-01,  4.3604e-01, -7.8955e-01],
+         [ 1.0059e+00, -1.6152e+00,  3.4454e-02,  1.4551e+00,  3.1055e+00,
+          -1.4648e-01,  1.2588e+00, -1.4648e+00],
+         [-1.4639e+00, -3.7872e-02,  1.0980e-01,  1.3545e+00, -1.4124e-01,
+          -2.2812e+00, -1.7402e+00, -1.7334e+00],
+         [ 1.6484e+00, -1.2109e+00,  3.0039e+00,  1.1542e-01, -3.9136e-01,
+          -1.3291e+00, -9.2529e-01, -7.0703e-01],
+         [ 4.9609e-01, -7.7637e-01,  1.0068e+00,  2.4043e+00,  9.7119e-01,
+           2.1326e-01, -1.0809e-01, -9.2529e-01],
+         [ 5.8838e-01, -6.1328e-01, -9.4287e-01,  1.8760e+00,  3.2812e+00,
+          -3.7480e+00,  2.3965e+00, -4.9438e-01],
+         [ 8.8037e-01,  4.3652e-01, -1.3408e+00,  1.6270e+00,  1.8311e+00,
+           1.0918e+00,  1.3174e+00,  2.9370e-01],
+         [ 1.6504e+00, -1.0094e-02, -1.5938e+00,  2.6426e+00, -4.8608e-01,
+           2.8945e+00, -1.6016e+00,  6.2305e-01],
+         [-5.1709e-01, -2.1484e+00, -1.6406e+00,  9.0674e-01, -1.9580e-01,
+          -1.5645e+00, -1.0381e+00, -1.6035e+00],
+         [ 1.0459e+00, -6.8213e-01, -1.6709e+00, -2.4976e-01,  1.9043e-01,
+          -1.9551e+00,  3.4985e-01, -9.3262e-02],
+         [ 1.8477e+00, -6.6943e-01,  1.2170e-01,  2.2227e+00,  2.9375e+00,
+           4.5532e-01,  1.7842e+00,  8.8501e-02],
+         [-4.5825e-01, -2.2246e+00,  3.2266e+00,  5.1211e+00, -1.0693e+00,
+          -5.2100e-01, -1.1133e+00,  9.0039e-01],
+         [ 1.4307e+00, -1.3037e+00,  1.1133e+00,  3.2891e+00,  4.6387e-01,
+          -1.6318e+00, -1.9668e+00, -1.6919e-01],
+         [ 1.1758e+00, -4.5215e-01,  1.1318e+00,  2.1992e+00, -2.4609e-01,
+           1.4795e-01, -1.3464e-01,  1.3408e+00],
+         [ 7.6172e-01, -1.8457e+00,  4.9683e-01,  4.2578e+00,  9.1309e-01,
+          -4.1211e+00,  6.9287e-01,  1.2598e+00],
+         [ 3.8965e-01, -1.9180e+00, -6.4502e-01,  4.1602e+00,  1.6631e+00,
+          -2.3926e+00,  8.4778e-02, -1.0186e+00],
+         [-3.2788e-01, -9.5898e-01,  2.3750e+00,  3.2852e+00, -1.1885e+00,
+          -2.7832e-01, -2.1660e+00,  2.3975e-01],
+         [-5.9387e-02, -6.6406e-01,  5.0568e-02,  2.1387e+00, -1.3135e+00,
+           2.9121e+00, -1.1631e+00, -2.0078e+00],
+         [ 9.1602e-01,  2.1143e-01,  1.2363e+00,  2.6025e-01, -1.3770e-01,
+          -1.9922e-01, -5.4688e-01,  3.6426e-01],
+         [ 8.2703e-02,  5.5939e-02,  4.8145e-01,  2.5957e+00, -7.0459e-01,
+           1.5784e-01, -7.2705e-01,  1.0176e+00],
+         [-1.4783e-01, -1.9458e-01, -6.7090e-01,  1.0883e-01, -1.2822e+00,
+           2.4915e-01, -4.4507e-01,  5.3857e-01],
+         [-4.2578e-01, -1.1841e-01,  4.0918e-01,  4.5459e-01, -5.6396e-01,
+          -2.9121e+00,  5.6250e-01, -3.1582e+00],
+         [ 1.6221e+00, -9.9219e-01,  1.9346e+00,  1.9746e+00,  2.0586e+00,
+          -1.5010e+00,  9.9945e-04,  1.0596e-01],
+         [-9.6240e-01, -1.3330e+00,  3.9199e+00,  7.2217e-01, -1.4414e+00,
+          -3.1055e-01, -2.3613e+00,  5.3125e-01],
+         [ 5.0537e-01, -1.1896e-01,  3.6206e-01,  3.7637e+00, -1.9360e-01,
+          -4.6289e-01, -2.4961e+00,  3.7323e-02],
+         [ 2.0293e+00, -5.8545e-01,  8.9453e-01,  4.0405e-01, -6.0742e-01,
+          -1.7109e+00, -1.1338e+00,  8.3838e-01],
+         [-3.9917e-01, -5.3223e-01,  6.3818e-01,  2.1348e+00, -2.0820e+00,
+           4.6021e-01, -5.6836e-01,  2.8735e-01],
+         [ 2.2363e+00, -2.6816e+00,  5.3955e-01,  4.0430e+00, -1.8433e-01,
+          -3.2930e+00,  3.3667e-01,  3.7598e-02],
+         [ 1.2832e+00, -3.3164e+00,  9.6582e-01,  3.5215e+00,  1.2061e+00,
+          -3.4707e+00,  7.8662e-01,  2.0469e+00],
+         [ 7.7393e-01, -7.2119e-01,  1.5449e+00,  2.5586e+00, -1.0400e+00,
+           8.0908e-01, -5.5566e-01,  5.3680e-02],
+         [ 4.7095e-01, -7.6318e-01,  4.3008e+00,  1.1934e+00, -3.3887e+00,
+          -1.8978e-03, -3.2266e+00,  6.3330e-01],
+         [ 2.7930e+00,  6.1890e-02,  6.9873e-01,  3.4531e+00, -1.3086e-01,
+           1.6895e+00,  6.3574e-01,  1.2659e-01],
+         [ 8.8916e-01,  1.9922e-01,  7.0752e-01, -3.8794e-01, -2.7734e-01,
+          -1.2812e+00, -1.0889e+00,  1.1943e+00],
+         [-7.1240e-01, -1.3208e-01,  5.5371e-01,  1.7734e+00, -1.3828e+00,
+           5.3418e-01, -3.2764e-01, -2.2632e-01],
+         [ 1.4199e+00, -1.3730e+00, -3.6987e-01,  1.9375e+00, -2.9668e+00,
+          -9.9854e-01,  1.2666e+00,  2.8906e+00],
+         [ 7.4756e-01, -1.3154e+00,  1.8506e+00,  3.1777e+00,  1.3799e+00,
+          -3.5625e+00,  7.9199e-01,  2.0645e+00],
+         [-1.0000e+00,  1.6479e-02,  1.3213e+00,  3.3047e+00, -2.0508e+00,
+           2.6406e+00, -1.7070e+00,  2.1953e+00],
+         [ 1.6680e+00, -2.0137e+00,  1.2012e+00,  1.5176e+00,  1.8252e+00,
+          -4.1328e+00,  1.1951e-01,  7.0618e-02],
+         [ 4.7900e-01, -1.2383e+00,  2.7075e-01,  8.7891e-01, -1.0498e+00,
+          -1.0605e+00, -5.2197e-01, -1.3403e-01],
+         [ 9.1797e-01, -1.9727e+00,  1.6602e+00,  2.0820e+00,  2.9746e+00,
+           5.8936e-01, -5.3564e-01,  2.1179e-01],
+         [ 7.2314e-01, -6.5674e-01, -2.6660e-01,  7.5928e-01,  3.4844e+00,
+          -7.7979e-01,  1.8643e+00, -2.0938e+00],
+         [-7.7344e-01, -3.3691e-01,  5.6213e-02,  1.8662e+00,  5.3906e-01,
+          -3.2324e+00, -1.7500e+00, -2.0645e+00],
+         [ 5.6836e-01, -1.4199e+00,  1.2070e+00, -4.6921e-03, -1.0342e+00,
+          -2.3164e+00,  8.0029e-01, -1.8525e+00],
+         [ 2.5610e-01,  7.7343e-04,  2.3945e+00,  6.9043e-01, -1.7871e+00,
+          -4.2358e-02, -1.7578e-01,  9.4604e-03],
+         [ 2.0337e-01,  2.4297e+00, -5.6152e-01,  3.2559e+00,  1.0693e+00,
+           8.3301e-01,  7.5732e-01,  9.5117e-01],
+         [-3.2578e+00,  1.6025e+00,  1.7861e+00,  1.4824e+00,  2.1406e+00,
+          -8.9062e-01,  4.8853e-01,  1.6816e+00],
+         [ 7.4805e-01,  1.2070e+00,  2.1172e+00,  2.6514e-01,  3.4238e+00,
+          -6.4990e-01, -1.4062e-01, -1.2085e-01],
+         [-3.0859e-01,  1.6589e-01, -2.0374e-01,  1.2607e+00,  4.3008e+00,
+          -2.0898e+00, -4.8767e-02, -7.2754e-01],
+         [ 8.4473e-01,  3.2593e-01,  5.3253e-02,  1.1504e+00,  3.6875e+00,
+           9.3066e-01,  1.4590e+00, -4.3701e-01]],
+
+        [[ 1.1572e+00,  9.2529e-01, -3.0586e+00,  1.4336e+00,  1.2324e+00,
+           6.9482e-01,  2.8066e+00, -1.6199e-01],
+         [ 2.0586e+00,  3.0981e-01, -5.1855e-01,  7.3193e-01,  9.4531e-01,
+          -2.3379e+00,  4.3203e+00, -3.0127e-01],
+         [ 1.8740e+00,  6.2793e-01,  4.2236e-01,  3.7539e+00, -1.1133e+00,
+          -2.6582e+00,  1.8877e+00, -3.1787e-01],
+         [ 1.7598e+00,  2.7832e+00, -2.1523e+00,  6.5234e-01, -1.5889e+00,
+          -1.5039e+00,  1.3135e+00, -1.5356e-01],
+         [ 5.1172e-01,  2.6416e-01, -8.0566e-01,  1.9551e+00, -1.4355e+00,
+          -1.7471e+00,  1.0898e+00, -6.0547e-01],
+         [ 1.8955e+00,  4.2432e-01, -4.6411e-01,  2.7363e+00,  7.2021e-01,
+          -3.7305e+00,  1.3613e+00, -8.9697e-01],
+         [ 1.5098e+00, -1.6885e+00, -5.1855e-01,  2.0664e+00,  1.2705e+00,
+          -5.9141e+00,  1.0215e+00,  8.2324e-01],
+         [ 1.3467e+00, -2.3418e+00, -6.2988e-01,  2.1738e+00, -1.6699e+00,
+          -1.5986e+00,  1.8469e-01,  8.9014e-01],
+         [-1.7998e+00, -8.4570e-01, -8.1104e-01,  6.3721e-01,  2.1738e+00,
+          -1.9961e+00,  2.2383e+00,  9.5166e-01],
+         [-5.7495e-02,  2.0776e-01,  3.3887e-01,  9.1455e-01, -8.4277e-01,
+          -3.6108e-01,  1.1074e+00,  5.3711e-01],
+         [-8.9307e-01,  3.4326e-01,  9.5215e-01,  1.5833e-01, -1.3174e+00,
+          -2.6992e+00,  1.0175e-01, -1.3887e+00],
+         [-4.6967e-02,  1.6289e+00,  1.0420e+00,  1.0293e+00, -8.1592e-01,
+          -2.0039e+00,  3.8940e-01, -2.4629e+00],
+         [-6.4941e-01,  1.1016e+00,  5.2393e-01,  1.4365e+00, -2.3262e+00,
+          -3.3789e+00,  3.6743e-01, -1.8965e+00],
+         [-2.2812e+00, -1.3955e+00,  1.7566e-01, -9.5642e-02,  1.4277e+00,
+          -1.1543e+00,  2.0254e+00, -1.2393e+00],
+         [ 7.0947e-01, -9.9756e-01,  1.7607e+00,  1.5322e+00,  1.6025e+00,
+          -1.7012e+00,  2.2969e+00,  7.7979e-01],
+         [-1.2217e+00, -9.8096e-01, -1.9424e+00,  1.1719e+00,  1.2471e+00,
+          -2.7285e+00,  2.9770e-02, -7.8516e-01],
+         [-6.4062e-01,  2.8687e-01, -2.9980e-01, -8.2321e-03,  1.4238e+00,
+          -5.8350e-01, -1.5186e-01, -7.0850e-01],
+         [-1.6016e-01,  2.9443e-01,  5.5328e-02,  8.3887e-01,  9.8779e-01,
+          -5.8740e-01,  1.4294e-01, -1.0565e-01],
+         [-1.3711e+00,  6.1670e-01,  8.3557e-02, -3.8306e-01, -4.9097e-01,
+          -3.6060e-01, -2.1543e+00, -1.2354e+00],
+         [ 1.1074e+00,  1.6963e+00,  1.3369e+00,  8.7842e-01, -7.7588e-01,
+          -9.9121e-01, -3.3545e-01, -2.0059e+00],
+         [-1.1816e+00,  1.3799e+00, -7.9297e-01,  1.2520e+00, -1.0137e+00,
+          -2.2812e+00,  8.8272e-03, -1.0303e+00],
+         [-1.1211e+00, -3.7256e-01,  1.2646e+00,  1.5391e+00, -4.8065e-02,
+          -1.0518e+00,  1.1768e+00,  1.0059e+00],
+         [ 2.1113e+00, -2.2871e+00,  1.7998e+00,  3.3965e+00,  2.2402e+00,
+          -3.4746e+00,  1.5273e+00,  1.5273e+00],
+         [ 1.4697e+00, -1.1309e+00, -9.2236e-01,  2.0469e+00,  2.3809e+00,
+          -5.0117e+00,  2.0625e+00, -1.4229e+00],
+         [ 3.6797e+00, -4.4482e-01, -1.3984e+00,  3.0293e+00,  2.3125e+00,
+          -2.0156e+00,  2.7227e+00, -2.0156e+00],
+         [ 1.1611e+00, -3.6304e-01, -7.5977e-01,  2.4980e+00,  1.2822e+00,
+          -3.9668e+00,  1.5149e-01, -4.5117e-01],
+         [ 1.3594e+00, -9.2334e-01,  1.8271e+00,  2.7441e-01,  5.2393e-01,
+          -1.8115e+00,  9.6924e-01,  4.5361e-01],
+         [ 5.7910e-01,  3.4326e-01,  2.3770e+00, -1.3076e+00, -5.3857e-01,
+           1.3770e+00, -6.7969e-01,  4.0161e-01],
+         [ 2.6289e+00, -4.2432e-01,  2.5156e+00,  1.0615e+00,  8.6865e-01,
+          -3.3320e+00,  5.0732e-01,  2.2578e+00],
+         [ 2.1406e+00,  4.0479e-01,  9.6680e-01,  2.2324e+00,  6.0547e-01,
+          -4.8086e+00,  1.0879e+00,  2.1289e-01],
+         [ 7.1289e-01, -4.2236e-02,  5.3906e-01,  2.9590e+00, -1.3662e+00,
+           1.1279e+00, -3.3574e+00, -1.1318e+00],
+         [ 3.2007e-01,  3.4033e-01, -3.5474e-01,  3.7969e+00, -1.5771e+00,
+          -3.6035e+00, -6.3086e-01, -1.5225e+00],
+         [ 1.4941e+00, -1.9458e-01,  9.6008e-02,  7.5928e-01, -3.0054e-01,
+          -1.4941e+00,  2.2695e+00, -1.1978e-02],
+         [ 1.1211e+00,  7.2949e-01, -2.7759e-01,  1.1670e+00,  2.3711e+00,
+          -2.9160e+00,  5.3320e-01, -4.8438e-01],
+         [-5.3760e-01,  4.6631e-01,  2.6289e+00,  3.7598e-01,  7.2083e-02,
+          -1.6338e+00, -2.3574e+00, -1.3408e+00],
+         [ 7.0703e-01,  4.1333e-01,  3.7671e-01, -1.0039e+00, -1.3271e+00,
+          -5.7471e-01, -1.1562e+00, -1.9922e+00],
+         [-1.9717e+00,  4.8523e-02,  2.6221e-01, -1.5029e+00, -9.5996e-01,
+          -9.4922e-01, -2.1289e+00, -1.1885e+00],
+         [-3.6401e-01, -1.3838e+00, -2.3555e+00, -1.3496e+00,  1.2744e+00,
+          -1.5518e+00,  1.7695e+00, -1.0850e+00],
+         [ 3.7817e-01,  9.3359e-01, -1.7529e+00,  2.2852e+00, -8.1836e-01,
+           1.4385e+00,  7.7539e-01,  5.3516e-01],
+         [ 7.5488e-01,  1.3311e+00, -1.3037e+00, -6.6992e-01,  7.3975e-01,
+           7.0117e-01, -2.8149e-01, -1.3682e+00],
+         [-1.7725e+00, -1.6523e+00, -1.8176e-01,  1.1533e+00,  2.2988e+00,
+          -2.3965e+00,  2.8008e+00,  1.4282e-01],
+         [ 5.1855e-01,  9.2432e-01,  2.2070e-01,  5.8594e-01, -1.1395e-01,
+           2.5586e+00, -9.8193e-01,  4.3115e-01],
+         [-1.0371e+00,  1.3965e+00,  2.2676e+00,  2.3999e-01, -9.7656e-01,
+          -1.2793e+00, -1.2812e+00, -2.0742e+00],
+         [ 4.0863e-02,  1.8926e+00,  1.1084e+00,  1.4478e-01, -1.2812e+00,
+          -1.1621e+00, -6.1914e-01, -2.8145e+00],
+         [-1.7656e+00,  1.4062e+00,  4.5776e-01, -4.7272e-02, -2.9062e+00,
+          -1.9980e+00, -1.5881e-01, -2.1191e+00],
+         [-2.5137e+00, -1.4424e+00,  9.1455e-01, -3.2593e-01,  2.0820e+00,
+          -1.6953e+00,  4.5093e-01, -1.9268e+00],
+         [ 1.3892e-01,  7.9688e-01,  5.4443e-01,  1.5303e+00,  1.5225e+00,
+          -1.4785e+00,  2.8467e-01, -1.9055e-01],
+         [-2.1997e-01, -4.5581e-01, -4.6899e-01,  1.4678e+00,  3.5918e+00,
+          -4.6484e+00,  2.8125e-01, -9.7852e-01],
+         [-1.1963e+00,  5.0684e-01,  9.2041e-01,  7.9150e-01, -7.6221e-01,
+          -1.5000e+00, -1.2900e+00, -1.6875e+00],
+         [ 1.7939e+00,  1.0605e+00,  1.5078e+00,  9.9365e-01,  5.3516e-01,
+          -1.4141e+00, -5.5029e-01, -1.9814e+00],
+         [-1.6396e+00,  9.7949e-01, -6.1279e-01, -5.1318e-01, -1.0713e+00,
+          -1.8311e+00, -5.3809e-01, -1.2559e+00],
+         [-8.8086e-01,  2.2344e+00, -1.7548e-02,  4.9902e-01, -1.8555e+00,
+           2.3574e+00,  2.4670e-01,  1.8174e+00],
+         [-8.1934e-01,  1.5686e-01,  2.8052e-01,  1.2384e-01,  2.6641e+00,
+          -5.9688e+00,  1.9375e+00, -8.9209e-01],
+         [ 3.9624e-01,  1.4619e+00, -1.5442e-01,  2.0039e+00, -1.3037e+00,
+           3.3711e+00,  6.7041e-01,  4.8975e-01],
+         [-2.3975e-01, -3.6926e-02, -1.5527e+00,  2.2637e+00, -1.5703e+00,
+          -3.1128e-01, -2.7905e-01, -1.4219e+00],
+         [-6.1475e-01,  4.5996e-01,  1.4668e+00,  2.7559e+00,  1.9639e+00,
+          -1.0537e+00, -9.9072e-01, -2.2498e-01],
+         [-4.1138e-01, -2.0098e+00,  1.4863e+00,  2.7676e+00,  1.0957e+00,
+          -1.2627e+00, -2.9617e-02, -1.2490e+00],
+         [ 6.5186e-01, -4.7241e-01, -2.2168e+00,  2.0586e+00,  1.0186e+00,
+          -2.2617e+00,  1.4443e+00, -1.5029e+00],
+         [-1.0264e+00,  1.9666e-01, -6.1621e-01, -8.0444e-02, -3.6035e-01,
+          -8.8818e-01, -2.5513e-01, -1.2217e+00],
+         [ 6.9824e-01,  2.5117e+00,  1.7119e+00,  2.8008e+00,  1.0687e-01,
+          -8.6523e-01,  2.1692e-01,  4.0723e-01],
+         [ 1.5449e+00,  2.8730e+00, -1.0127e+00,  3.0352e+00, -1.0381e+00,
+           1.8640e-01, -5.9540e-02, -7.3096e-01],
+         [ 5.0195e-01,  1.9580e+00, -1.4863e+00,  2.4414e+00, -2.5391e+00,
+           4.4214e-01, -5.6250e-01, -1.0439e+00],
+         [-1.7441e+00, -7.0947e-01,  3.3887e-01,  7.2705e-01,  3.4688e+00,
+          -1.7852e+00, -5.1953e-01,  1.9653e-01],
+         [-2.9004e-01, -2.8247e-01,  1.4014e+00, -9.7168e-01, -1.3252e+00,
+          -9.3164e-01, -2.2949e+00, -9.0137e-01],
+         [ 1.1230e+00,  1.5449e+00,  4.8755e-01, -1.5308e-01, -2.0703e+00,
+           1.4587e-01, -1.3447e+00, -1.7891e+00],
+         [-1.3350e+00,  7.3291e-01, -1.5149e-01, -5.3809e-01, -3.5566e+00,
+          -1.3906e+00, -6.3623e-01, -1.5391e+00],
+         [-3.3125e+00, -2.4551e+00,  2.5146e-01, -1.7441e+00,  3.0078e+00,
+          -1.1152e+00, -8.5938e-01,  1.2103e-01],
+         [-1.9199e+00, -7.6318e-01,  8.0273e-01, -1.2617e+00,  3.7383e+00,
+          -1.4707e+00, -9.4971e-01, -7.3340e-01],
+         [ 2.0557e-01, -6.8909e-02,  2.4451e-01,  1.3945e+00,  3.5723e+00,
+          -4.8828e+00, -1.1902e-01, -8.3496e-01],
+         [-3.8340e+00,  5.5762e-01, -5.3711e-01, -1.2148e+00, -1.9336e+00,
+          -1.6025e+00, -2.7656e+00, -2.6816e+00],
+         [ 8.3301e-01,  1.0840e+00,  1.2529e+00,  2.6172e-01, -2.6245e-01,
+          -2.3083e-01, -8.3789e-01, -1.9834e+00],
+         [-1.3330e+00,  1.0000e+00, -5.6445e-01, -6.8555e-01, -1.3516e+00,
+          -1.4473e+00, -8.3545e-01, -1.1270e+00],
+         [-2.4980e+00, -1.9795e+00,  5.5127e-01, -1.4111e+00,  3.8379e+00,
+          -2.9453e+00, -5.7764e-01, -3.0249e-01],
+         [-7.1875e-01,  7.9102e-01, -4.1797e-01, -9.9951e-01,  3.5059e-01,
+           7.3389e-01, -1.2910e+00,  2.5726e-02],
+         [ 1.5686e-02,  6.1279e-01,  6.5918e-02,  2.2383e+00, -4.2676e-01,
+           6.6223e-02, -1.0576e+00,  6.6406e-01],
+         [ 1.8584e+00, -4.9487e-01,  1.2861e+00,  1.8799e+00,  3.7817e-01,
+          -3.3887e+00,  2.5928e-01, -4.7095e-01]]], device='cuda:3',
+       dtype=torch.float16)

@@ -97,7 +97,8 @@ class LLaMA(nn.Module):
         
         if self.local_rank == self.world_size - 1:
             print(len(outputs))
-            print(outputs)
+            torch.set_printoptions(profile="full")
+            print(outputs[0][:,:,-8:])
             return outputs 
         else:
             return None
