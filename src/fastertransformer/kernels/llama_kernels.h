@@ -59,4 +59,20 @@ void invokeLLaMAExtractTargets(float*       out,
                                int          vocab_size,
                                int          num_tokens,
                                cudaStream_t stream);
+
+template<typename T>
+void invokeLLaMAFusedAttention(T*           qkv_buf,
+                               const T*     q_buf,
+                               const T*     k_buf,
+                               const T*     v_buf,
+                               const T*     attention_mask,
+                               const T      qk_scale,
+                               const int*   cu_seqlens,
+                               const int    batch_size,
+                               const int    num_heads,
+                               const int    attn_seq_len_1,
+                               const int    attn_seq_len_2,
+                               const int    size_per_head,
+                               cudaStream_t stream);
+
 }  // namespace fastertransformer

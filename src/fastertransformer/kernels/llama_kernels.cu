@@ -386,4 +386,98 @@ template void invokeLLaMAMemset0(half* dst, const int count, cudaStream_t stream
 template void invokeLLaMAMemset0(__nv_bfloat16* dst, const int count, cudaStream_t stream);
 #endif
 
+__global__ void LLaMA_fused_attention(half*       qkv_buf,
+                                      const half* q_buf,
+                                      const half* k_buf,
+                                      const half* v_buf,
+                                      const half* attention_mask,
+                                      const half  qk_scale,
+                                      const int*  cu_seqlens,
+                                      const int   batch_size,
+                                      const int   num_heads,
+                                      const int   attn_seq_len_1,
+                                      const int   attn_seq_len_2,
+                                      const int   size_per_head)
+{
+}
+
+template<typename T>
+void invokeLLaMAFusedAttention(T*           qkv_buf,
+                               const T*     q_buf,
+                               const T*     k_buf,
+                               const T*     v_buf,
+                               const T*     attention_mask,
+                               const T      qk_scale,
+                               const int*   cu_seqlens,
+                               const int    batch_size,
+                               const int    num_heads,
+                               const int    attn_seq_len_1,
+                               const int    attn_seq_len_2,
+                               const int    size_per_head,
+                               cudaStream_t stream)
+{
+    if constexpr (!is_same<T, half>::value) {
+        assert(false);
+    }
+    else {
+        dim3 grid(num_heads, batch_size);
+        dim3 block(1);
+        LLaMA_fused_attention<<<grid, block>>>((half*)qkv_buf,
+                                               (const half*)q_buf,
+                                               (const half*)k_buf,
+                                               (const half*)v_buf,
+                                               (const half*)attention_mask,
+                                               (half)qk_scale,
+                                               cu_seqlens,
+                                               batch_size,
+                                               num_heads,
+                                               attn_seq_len_1,
+                                               attn_seq_len_2,
+                                               size_per_head);
+    }
+}
+
+template void invokeLLaMAFusedAttention(float*       qkv_buf,
+                                        const float* q_buf,
+                                        const float* k_buf,
+                                        const float* v_buf,
+                                        const float* attention_mask,
+                                        const float  qk_scale,
+                                        const int*   cu_seqlens,
+                                        const int    batch_size,
+                                        const int    num_heads,
+                                        const int    attn_seq_len_1,
+                                        const int    attn_seq_len_2,
+                                        const int    size_per_head,
+                                        cudaStream_t stream);
+
+template void invokeLLaMAFusedAttention(half*        qkv_buf,
+                                        const half*  q_buf,
+                                        const half*  k_buf,
+                                        const half*  v_buf,
+                                        const half*  attention_mask,
+                                        const half   qk_scale,
+                                        const int*   cu_seqlens,
+                                        const int    batch_size,
+                                        const int    num_heads,
+                                        const int    attn_seq_len_1,
+                                        const int    attn_seq_len_2,
+                                        const int    size_per_head,
+                                        cudaStream_t stream);
+
+#ifdef ENABLE_BF16
+template void invokeLLaMAFusedAttention(__nv_bfloat16*       qkv_buf,
+                                        const __nv_bfloat16* q_buf,
+                                        const __nv_bfloat16* k_buf,
+                                        const __nv_bfloat16* v_buf,
+                                        const __nv_bfloat16* attention_mask,
+                                        const __nv_bfloat16  qk_scale,
+                                        const int*           cu_seqlens,
+                                        const int            batch_size,
+                                        const int            num_heads,
+                                        const int            attn_seq_len_1,
+                                        const int            attn_seq_len_2,
+                                        const int            size_per_head,
+                                        cudaStream_t         stream);
+#endif
 }  // namespace fastertransformer
